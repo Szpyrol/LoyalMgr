@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B31E601E1EA2390900F2CB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E601D1EA2390900F2CB77 /* AppDelegate.swift */; };
+		B31E60201EA2390900F2CB77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E601F1EA2390900F2CB77 /* ViewController.swift */; };
+		B31E60231EA2390900F2CB77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31E60211EA2390900F2CB77 /* Main.storyboard */; };
+		B31E60261EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B31E60241EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld */; };
+		B31E60281EA2390900F2CB77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31E60271EA2390900F2CB77 /* Assets.xcassets */; };
+		B31E602B1EA2390900F2CB77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31E60291EA2390900F2CB77 /* LaunchScreen.storyboard */; };
+		B31E60361EA2390900F2CB77 /* Loyal_mgrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60351EA2390900F2CB77 /* Loyal_mgrTests.swift */; };
+		B31E60411EA2390900F2CB77 /* Loyal_mgrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60401EA2390900F2CB77 /* Loyal_mgrUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B31E60321EA2390900F2CB77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B31E60121EA2390900F2CB77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B31E60191EA2390900F2CB77;
+			remoteInfo = "Loyal mgr";
+		};
+		B31E603D1EA2390900F2CB77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B31E60121EA2390900F2CB77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B31E60191EA2390900F2CB77;
+			remoteInfo = "Loyal mgr";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B31E601A1EA2390900F2CB77 /* Loyal mgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loyal mgr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31E601D1EA2390900F2CB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B31E601F1EA2390900F2CB77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B31E60221EA2390900F2CB77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B31E60251EA2390900F2CB77 /* Loyal_mgr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Loyal_mgr.xcdatamodel; sourceTree = "<group>"; };
+		B31E60271EA2390900F2CB77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B31E602A1EA2390900F2CB77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B31E602C1EA2390900F2CB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31E60311EA2390900F2CB77 /* Loyal mgrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loyal mgrTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31E60351EA2390900F2CB77 /* Loyal_mgrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loyal_mgrTests.swift; sourceTree = "<group>"; };
+		B31E60371EA2390900F2CB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31E603C1EA2390900F2CB77 /* Loyal mgrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loyal mgrUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31E60401EA2390900F2CB77 /* Loyal_mgrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loyal_mgrUITests.swift; sourceTree = "<group>"; };
+		B31E60421EA2390900F2CB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B31E60171EA2390900F2CB77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31E602E1EA2390900F2CB77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31E60391EA2390900F2CB77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B31E60111EA2390900F2CB77 = {
+			isa = PBXGroup;
+			children = (
+				B31E601C1EA2390900F2CB77 /* Loyal mgr */,
+				B31E60341EA2390900F2CB77 /* Loyal mgrTests */,
+				B31E603F1EA2390900F2CB77 /* Loyal mgrUITests */,
+				B31E601B1EA2390900F2CB77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B31E601B1EA2390900F2CB77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B31E601A1EA2390900F2CB77 /* Loyal mgr.app */,
+				B31E60311EA2390900F2CB77 /* Loyal mgrTests.xctest */,
+				B31E603C1EA2390900F2CB77 /* Loyal mgrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B31E601C1EA2390900F2CB77 /* Loyal mgr */ = {
+			isa = PBXGroup;
+			children = (
+				B31E601D1EA2390900F2CB77 /* AppDelegate.swift */,
+				B31E601F1EA2390900F2CB77 /* ViewController.swift */,
+				B31E60211EA2390900F2CB77 /* Main.storyboard */,
+				B31E60271EA2390900F2CB77 /* Assets.xcassets */,
+				B31E60291EA2390900F2CB77 /* LaunchScreen.storyboard */,
+				B31E602C1EA2390900F2CB77 /* Info.plist */,
+				B31E60241EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld */,
+			);
+			path = "Loyal mgr";
+			sourceTree = "<group>";
+		};
+		B31E60341EA2390900F2CB77 /* Loyal mgrTests */ = {
+			isa = PBXGroup;
+			children = (
+				B31E60351EA2390900F2CB77 /* Loyal_mgrTests.swift */,
+				B31E60371EA2390900F2CB77 /* Info.plist */,
+			);
+			path = "Loyal mgrTests";
+			sourceTree = "<group>";
+		};
+		B31E603F1EA2390900F2CB77 /* Loyal mgrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B31E60401EA2390900F2CB77 /* Loyal_mgrUITests.swift */,
+				B31E60421EA2390900F2CB77 /* Info.plist */,
+			);
+			path = "Loyal mgrUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B31E60191EA2390900F2CB77 /* Loyal mgr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31E60451EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgr" */;
+			buildPhases = (
+				B31E60161EA2390900F2CB77 /* Sources */,
+				B31E60171EA2390900F2CB77 /* Frameworks */,
+				B31E60181EA2390900F2CB77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Loyal mgr";
+			productName = "Loyal mgr";
+			productReference = B31E601A1EA2390900F2CB77 /* Loyal mgr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B31E60301EA2390900F2CB77 /* Loyal mgrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31E60481EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgrTests" */;
+			buildPhases = (
+				B31E602D1EA2390900F2CB77 /* Sources */,
+				B31E602E1EA2390900F2CB77 /* Frameworks */,
+				B31E602F1EA2390900F2CB77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B31E60331EA2390900F2CB77 /* PBXTargetDependency */,
+			);
+			name = "Loyal mgrTests";
+			productName = "Loyal mgrTests";
+			productReference = B31E60311EA2390900F2CB77 /* Loyal mgrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B31E603B1EA2390900F2CB77 /* Loyal mgrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31E604B1EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgrUITests" */;
+			buildPhases = (
+				B31E60381EA2390900F2CB77 /* Sources */,
+				B31E60391EA2390900F2CB77 /* Frameworks */,
+				B31E603A1EA2390900F2CB77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B31E603E1EA2390900F2CB77 /* PBXTargetDependency */,
+			);
+			name = "Loyal mgrUITests";
+			productName = "Loyal mgrUITests";
+			productReference = B31E603C1EA2390900F2CB77 /* Loyal mgrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B31E60121EA2390900F2CB77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Łukasz Szpyrka";
+				TargetAttributes = {
+					B31E60191EA2390900F2CB77 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3477FZ96PQ;
+						ProvisioningStyle = Automatic;
+					};
+					B31E60301EA2390900F2CB77 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3477FZ96PQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B31E60191EA2390900F2CB77;
+					};
+					B31E603B1EA2390900F2CB77 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 3477FZ96PQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B31E60191EA2390900F2CB77;
+					};
+				};
+			};
+			buildConfigurationList = B31E60151EA2390900F2CB77 /* Build configuration list for PBXProject "Loyal mgr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B31E60111EA2390900F2CB77;
+			productRefGroup = B31E601B1EA2390900F2CB77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B31E60191EA2390900F2CB77 /* Loyal mgr */,
+				B31E60301EA2390900F2CB77 /* Loyal mgrTests */,
+				B31E603B1EA2390900F2CB77 /* Loyal mgrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B31E60181EA2390900F2CB77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31E602B1EA2390900F2CB77 /* LaunchScreen.storyboard in Resources */,
+				B31E60281EA2390900F2CB77 /* Assets.xcassets in Resources */,
+				B31E60231EA2390900F2CB77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31E602F1EA2390900F2CB77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31E603A1EA2390900F2CB77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B31E60161EA2390900F2CB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31E60261EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld in Sources */,
+				B31E60201EA2390900F2CB77 /* ViewController.swift in Sources */,
+				B31E601E1EA2390900F2CB77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31E602D1EA2390900F2CB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31E60361EA2390900F2CB77 /* Loyal_mgrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B31E60381EA2390900F2CB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31E60411EA2390900F2CB77 /* Loyal_mgrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B31E60331EA2390900F2CB77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B31E60191EA2390900F2CB77 /* Loyal mgr */;
+			targetProxy = B31E60321EA2390900F2CB77 /* PBXContainerItemProxy */;
+		};
+		B31E603E1EA2390900F2CB77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B31E60191EA2390900F2CB77 /* Loyal mgr */;
+			targetProxy = B31E603D1EA2390900F2CB77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B31E60211EA2390900F2CB77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B31E60221EA2390900F2CB77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B31E60291EA2390900F2CB77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B31E602A1EA2390900F2CB77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B31E60431EA2390900F2CB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B31E60441EA2390900F2CB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B31E60461EA2390900F2CB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3477FZ96PQ;
+				INFOPLIST_FILE = "Loyal mgr/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.Applicore.Loyal-mgr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B31E60471EA2390900F2CB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3477FZ96PQ;
+				INFOPLIST_FILE = "Loyal mgr/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.Applicore.Loyal-mgr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B31E60491EA2390900F2CB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3477FZ96PQ;
+				INFOPLIST_FILE = "Loyal mgrTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.Applicore.Loyal-mgrTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loyal mgr.app/Loyal mgr";
+			};
+			name = Debug;
+		};
+		B31E604A1EA2390900F2CB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3477FZ96PQ;
+				INFOPLIST_FILE = "Loyal mgrTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.Applicore.Loyal-mgrTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loyal mgr.app/Loyal mgr";
+			};
+			name = Release;
+		};
+		B31E604C1EA2390900F2CB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3477FZ96PQ;
+				INFOPLIST_FILE = "Loyal mgrUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.Applicore.Loyal-mgrUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Loyal mgr";
+			};
+			name = Debug;
+		};
+		B31E604D1EA2390900F2CB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3477FZ96PQ;
+				INFOPLIST_FILE = "Loyal mgrUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.Applicore.Loyal-mgrUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Loyal mgr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B31E60151EA2390900F2CB77 /* Build configuration list for PBXProject "Loyal mgr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31E60431EA2390900F2CB77 /* Debug */,
+				B31E60441EA2390900F2CB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B31E60451EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31E60461EA2390900F2CB77 /* Debug */,
+				B31E60471EA2390900F2CB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B31E60481EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31E60491EA2390900F2CB77 /* Debug */,
+				B31E604A1EA2390900F2CB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B31E604B1EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B31E604C1EA2390900F2CB77 /* Debug */,
+				B31E604D1EA2390900F2CB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B31E60241EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B31E60251EA2390900F2CB77 /* Loyal_mgr.xcdatamodel */,
+			);
+			currentVersion = B31E60251EA2390900F2CB77 /* Loyal_mgr.xcdatamodel */;
+			path = Loyal_mgr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B31E60121EA2390900F2CB77 /* Project object */;
+}
