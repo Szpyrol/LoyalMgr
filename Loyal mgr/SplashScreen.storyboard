@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PkK-pp-F7X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="AMA-ZS-TSi">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="PkK-pp-F7X" customClass="SplashViewController" customModule="Loyal_mgr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WEG-c7-WWf"/>
+                        <viewControllerLayoutGuide type="bottom" id="t04-IQ-iTe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bwH-iM-Bci">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Splash Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyg-1f-gSL">
+                                <rect key="frame" x="124" y="323" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25637875300000001" green="1" blue="0.21144777140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cyg-1f-gSL" firstAttribute="centerX" secondItem="bwH-iM-Bci" secondAttribute="centerX" id="gdF-zd-p1F"/>
+                            <constraint firstItem="cyg-1f-gSL" firstAttribute="centerY" secondItem="bwH-iM-Bci" secondAttribute="centerY" id="lPl-9n-MYf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="cyg-1f-gSL" id="De4-ul-7QD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFd-3d-c89" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="81.409295352323838"/>
+        </scene>
+    </scenes>
+</document>

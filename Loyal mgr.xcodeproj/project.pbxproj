@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A0DC0FBF5DCCDFADAC9F05 /* Pods_Loyal_mgr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652DDF5490BBB929930CE742 /* Pods_Loyal_mgr.framework */; };
 		B31E601E1EA2390900F2CB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E601D1EA2390900F2CB77 /* AppDelegate.swift */; };
 		B31E60201EA2390900F2CB77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E601F1EA2390900F2CB77 /* ViewController.swift */; };
 		B31E60231EA2390900F2CB77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31E60211EA2390900F2CB77 /* Main.storyboard */; };
@@ -15,6 +16,21 @@
 		B31E602B1EA2390900F2CB77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31E60291EA2390900F2CB77 /* LaunchScreen.storyboard */; };
 		B31E60361EA2390900F2CB77 /* Loyal_mgrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60351EA2390900F2CB77 /* Loyal_mgrTests.swift */; };
 		B31E60411EA2390900F2CB77 /* Loyal_mgrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60401EA2390900F2CB77 /* Loyal_mgrUITests.swift */; };
+		B31E60501EA23A5600F2CB77 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E604F1EA23A5600F2CB77 /* FlowCoordinator.swift */; };
+		B31E60551EA23AF800F2CB77 /* SplashFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60541EA23AF800F2CB77 /* SplashFlowCoordinator.swift */; };
+		B31E60581EA23B2A00F2CB77 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60571EA23B2A00F2CB77 /* SplashViewController.swift */; };
+		B31E605A1EA2443D00F2CB77 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60591EA2443D00F2CB77 /* MainFlowCoordinator.swift */; };
+		B31E605F1EA24B8400F2CB77 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31E605E1EA24B8400F2CB77 /* SplashScreen.storyboard */; };
+		B31E60641EA2570000F2CB77 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60631EA2570000F2CB77 /* Place.swift */; };
+		B31E60661EA276D500F2CB77 /* PlacesFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60651EA276D500F2CB77 /* PlacesFlowCoordinator.swift */; };
+		B31E60681EA2771C00F2CB77 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60671EA2771C00F2CB77 /* PlacesViewController.swift */; };
+		B31E606B1EA2774100F2CB77 /* Places.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31E606A1EA2774100F2CB77 /* Places.storyboard */; };
+		B31E606E1EA27C0000F2CB77 /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E606D1EA27C0000F2CB77 /* PlacesViewModel.swift */; };
+		B31E60701EA2AA1700F2CB77 /* PlacesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E606F1EA2AA1700F2CB77 /* PlacesListTableViewController.swift */; };
+		B31E60721EA2AA2900F2CB77 /* PlacesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60711EA2AA2900F2CB77 /* PlacesListViewModel.swift */; };
+		B31E60741EA388BE00F2CB77 /* PlacesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60731EA388BE00F2CB77 /* PlacesMapViewController.swift */; };
+		B31E60761EA388D600F2CB77 /* PlacesMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60751EA388D600F2CB77 /* PlacesMapViewModel.swift */; };
+		B31E60781EA3935A00F2CB77 /* Segmentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60771EA3935A00F2CB77 /* Segmentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		652DDF5490BBB929930CE742 /* Pods_Loyal_mgr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loyal_mgr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F102590488CC764D2CF7EB3 /* Pods-Loyal mgr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loyal mgr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Loyal mgr/Pods-Loyal mgr.debug.xcconfig"; sourceTree = "<group>"; };
+		B07A171D2354A91641B81D08 /* Pods-Loyal mgr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loyal mgr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Loyal mgr/Pods-Loyal mgr.release.xcconfig"; sourceTree = "<group>"; };
 		B31E601A1EA2390900F2CB77 /* Loyal mgr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loyal mgr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31E601D1EA2390900F2CB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31E601F1EA2390900F2CB77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +68,21 @@
 		B31E603C1EA2390900F2CB77 /* Loyal mgrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loyal mgrUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31E60401EA2390900F2CB77 /* Loyal_mgrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loyal_mgrUITests.swift; sourceTree = "<group>"; };
 		B31E60421EA2390900F2CB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31E604F1EA23A5600F2CB77 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		B31E60541EA23AF800F2CB77 /* SplashFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashFlowCoordinator.swift; sourceTree = "<group>"; };
+		B31E60571EA23B2A00F2CB77 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B31E60591EA2443D00F2CB77 /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		B31E605E1EA24B8400F2CB77 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		B31E60631EA2570000F2CB77 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		B31E60651EA276D500F2CB77 /* PlacesFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesFlowCoordinator.swift; sourceTree = "<group>"; };
+		B31E60671EA2771C00F2CB77 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		B31E606A1EA2774100F2CB77 /* Places.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Places.storyboard; sourceTree = "<group>"; };
+		B31E606D1EA27C0000F2CB77 /* PlacesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
+		B31E606F1EA2AA1700F2CB77 /* PlacesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesListTableViewController.swift; sourceTree = "<group>"; };
+		B31E60711EA2AA2900F2CB77 /* PlacesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesListViewModel.swift; sourceTree = "<group>"; };
+		B31E60731EA388BE00F2CB77 /* PlacesMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesMapViewController.swift; sourceTree = "<group>"; };
+		B31E60751EA388D600F2CB77 /* PlacesMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesMapViewModel.swift; sourceTree = "<group>"; };
+		B31E60771EA3935A00F2CB77 /* Segmentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segmentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A0DC0FBF5DCCDFADAC9F05 /* Pods_Loyal_mgr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98BCFEF07123DA244C075419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				652DDF5490BBB929930CE742 /* Pods_Loyal_mgr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B31E60111EA2390900F2CB77 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				B31E60341EA2390900F2CB77 /* Loyal mgrTests */,
 				B31E603F1EA2390900F2CB77 /* Loyal mgrUITests */,
 				B31E601B1EA2390900F2CB77 /* Products */,
+				FF0526BC44C9BA326C972C3E /* Pods */,
+				98BCFEF07123DA244C075419 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +144,13 @@
 		B31E601C1EA2390900F2CB77 /* Loyal mgr */ = {
 			isa = PBXGroup;
 			children = (
+				B31E60611EA2569C00F2CB77 /* Models */,
+				B31E60621EA256BD00F2CB77 /* Components */,
+				B31E604E1EA23A3E00F2CB77 /* FlowCoordinators */,
 				B31E601D1EA2390900F2CB77 /* AppDelegate.swift */,
 				B31E601F1EA2390900F2CB77 /* ViewController.swift */,
 				B31E60211EA2390900F2CB77 /* Main.storyboard */,
+				B31E605B1EA24AAA00F2CB77 /* UI */,
 				B31E60271EA2390900F2CB77 /* Assets.xcassets */,
 				B31E60291EA2390900F2CB77 /* LaunchScreen.storyboard */,
 				B31E602C1EA2390900F2CB77 /* Info.plist */,
@@ -128,6 +177,114 @@
 			path = "Loyal mgrUITests";
 			sourceTree = "<group>";
 		};
+		B31E604E1EA23A3E00F2CB77 /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B31E604F1EA23A5600F2CB77 /* FlowCoordinator.swift */,
+				B31E60591EA2443D00F2CB77 /* MainFlowCoordinator.swift */,
+			);
+			name = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		B31E60531EA23AC800F2CB77 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B31E60541EA23AF800F2CB77 /* SplashFlowCoordinator.swift */,
+				B31E60561EA23B0B00F2CB77 /* VC */,
+			);
+			name = Splash;
+			sourceTree = "<group>";
+		};
+		B31E60561EA23B0B00F2CB77 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B31E60571EA23B2A00F2CB77 /* SplashViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		B31E605B1EA24AAA00F2CB77 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B31E605C1EA24AB900F2CB77 /* UIComponents */,
+				B31E605D1EA24AC500F2CB77 /* Storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B31E605C1EA24AB900F2CB77 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B31E60771EA3935A00F2CB77 /* Segmentation.swift */,
+			);
+			name = UIComponents;
+			sourceTree = "<group>";
+		};
+		B31E605D1EA24AC500F2CB77 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B31E605E1EA24B8400F2CB77 /* SplashScreen.storyboard */,
+				B31E606A1EA2774100F2CB77 /* Places.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		B31E60601EA2563D00F2CB77 /* Places List */ = {
+			isa = PBXGroup;
+			children = (
+				B31E606C1EA27BD300F2CB77 /* VM */,
+				B31E60691EA2772200F2CB77 /* VC */,
+				B31E60651EA276D500F2CB77 /* PlacesFlowCoordinator.swift */,
+			);
+			name = "Places List";
+			sourceTree = "<group>";
+		};
+		B31E60611EA2569C00F2CB77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B31E60631EA2570000F2CB77 /* Place.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B31E60621EA256BD00F2CB77 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B31E60601EA2563D00F2CB77 /* Places List */,
+				B31E60531EA23AC800F2CB77 /* Splash */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		B31E60691EA2772200F2CB77 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B31E60671EA2771C00F2CB77 /* PlacesViewController.swift */,
+				B31E606F1EA2AA1700F2CB77 /* PlacesListTableViewController.swift */,
+				B31E60731EA388BE00F2CB77 /* PlacesMapViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		B31E606C1EA27BD300F2CB77 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				B31E606D1EA27C0000F2CB77 /* PlacesViewModel.swift */,
+				B31E60711EA2AA2900F2CB77 /* PlacesListViewModel.swift */,
+				B31E60751EA388D600F2CB77 /* PlacesMapViewModel.swift */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		FF0526BC44C9BA326C972C3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F102590488CC764D2CF7EB3 /* Pods-Loyal mgr.debug.xcconfig */,
+				B07A171D2354A91641B81D08 /* Pods-Loyal mgr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B31E60451EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgr" */;
 			buildPhases = (
+				9A7283023FCA5E971C09EABE /* [CP] Check Pods Manifest.lock */,
 				B31E60161EA2390900F2CB77 /* Sources */,
 				B31E60171EA2390900F2CB77 /* Frameworks */,
 				B31E60181EA2390900F2CB77 /* Resources */,
+				CB2A47E2F2141E103486318C /* [CP] Embed Pods Frameworks */,
+				331F6B67625F816333549B94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +399,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31E602B1EA2390900F2CB77 /* LaunchScreen.storyboard in Resources */,
+				B31E606B1EA2774100F2CB77 /* Places.storyboard in Resources */,
+				B31E605F1EA24B8400F2CB77 /* SplashScreen.storyboard in Resources */,
 				B31E60281EA2390900F2CB77 /* Assets.xcassets in Resources */,
 				B31E60231EA2390900F2CB77 /* Main.storyboard in Resources */,
 			);
@@ -260,13 +422,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		331F6B67625F816333549B94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Loyal mgr/Pods-Loyal mgr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A7283023FCA5E971C09EABE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB2A47E2F2141E103486318C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Loyal mgr/Pods-Loyal mgr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B31E60161EA2390900F2CB77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31E60761EA388D600F2CB77 /* PlacesMapViewModel.swift in Sources */,
+				B31E60501EA23A5600F2CB77 /* FlowCoordinator.swift in Sources */,
 				B31E60261EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld in Sources */,
+				B31E60721EA2AA2900F2CB77 /* PlacesListViewModel.swift in Sources */,
+				B31E60681EA2771C00F2CB77 /* PlacesViewController.swift in Sources */,
 				B31E60201EA2390900F2CB77 /* ViewController.swift in Sources */,
+				B31E60661EA276D500F2CB77 /* PlacesFlowCoordinator.swift in Sources */,
+				B31E60701EA2AA1700F2CB77 /* PlacesListTableViewController.swift in Sources */,
+				B31E60741EA388BE00F2CB77 /* PlacesMapViewController.swift in Sources */,
+				B31E60641EA2570000F2CB77 /* Place.swift in Sources */,
+				B31E606E1EA27C0000F2CB77 /* PlacesViewModel.swift in Sources */,
+				B31E60781EA3935A00F2CB77 /* Segmentation.swift in Sources */,
+				B31E60581EA23B2A00F2CB77 /* SplashViewController.swift in Sources */,
+				B31E605A1EA2443D00F2CB77 /* MainFlowCoordinator.swift in Sources */,
+				B31E60551EA23AF800F2CB77 /* SplashFlowCoordinator.swift in Sources */,
 				B31E601E1EA2390900F2CB77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +642,7 @@
 		};
 		B31E60461EA2390900F2CB77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F102590488CC764D2CF7EB3 /* Pods-Loyal mgr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3477FZ96PQ;
@@ -432,6 +656,7 @@
 		};
 		B31E60471EA2390900F2CB77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07A171D2354A91641B81D08 /* Pods-Loyal mgr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3477FZ96PQ;
@@ -520,6 +745,7 @@
 				B31E60471EA2390900F2CB77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B31E60481EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgrTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +754,7 @@
 				B31E604A1EA2390900F2CB77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B31E604B1EA2390900F2CB77 /* Build configuration list for PBXNativeTarget "Loyal mgrUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +763,7 @@
 				B31E604D1EA2390900F2CB77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
