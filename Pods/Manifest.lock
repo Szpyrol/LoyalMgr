@@ -1,0 +1,12 @@
+PODS:
+  - FontAwesome.swift (1.0.0)
+
+DEPENDENCIES:
+  - FontAwesome.swift
+
+SPEC CHECKSUMS:
+  FontAwesome.swift: 2d32a3d62195343c2004b7c9043294ed2948553a
+
+PODFILE CHECKSUM: 24f97a17b6e83636a82c969238e9dad46ebf10d1
+
+COCOAPODS: 1.1.1

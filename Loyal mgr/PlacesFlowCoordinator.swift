@@ -23,20 +23,23 @@ class PlacesFlowCoordinator: FlowCoordinator {
         let storyboard = UIStoryboard(name: "Places", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"PlacesViewController") as! PlacesViewController
         
-        viewController.viewModel = PlacesViewModel()
-        viewController.viewModel?.fetchItems()
-        viewController.delegate = self
+        
+       // viewController.viewModel?.delegate = viewController
+       // viewController.viewModel?.fetchItems()
+        
+        
         
         //MARK: List
         viewController.listVC = storyboard.instantiateViewController(withIdentifier: "PlacesListTableViewController") as? PlacesListTableViewController
-        viewController.listVC?.viewModel = PlacesListViewModel()
+        viewController.listVC?.viewModel = PlacesListViewModel(listView: viewController.listVC!)
         
         //MARK: Map
         viewController.mapVC = storyboard.instantiateViewController(withIdentifier: "PlacesMapViewController") as? PlacesMapViewController
         viewController.mapVC?.viewModel = PlacesMapViewModel()
         
-        
-        
+        viewController.viewModel = PlacesViewModel(viewController: viewController)
+        viewController.viewModel?.fetchItems()
+        viewController.delegate = self
         configure.navigationController?.pushViewController(viewController, animated: false)
 
     }
@@ -49,3 +52,5 @@ extension PlacesFlowCoordinator : PlacesViewControllerDelegate{
         
     }
 }
+
+

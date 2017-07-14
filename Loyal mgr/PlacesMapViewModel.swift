@@ -10,4 +10,5 @@ import UIKit
 
 class PlacesMapViewModel {
 
+    var places :[Place] = [Place]()
 }

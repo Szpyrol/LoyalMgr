@@ -49,6 +49,7 @@ class PlacesViewController: UIViewController {
         scrollView.addSubview((listVC?.view)!)
         scrollView.addSubview((mapVC?.view)!)
         scrollView.contentInset = .zero
+        scrollView.delegate = self
         scrollView.contentSize = CGSize(width: 2*self.view.frame.width,
                                         height: navigationBarHeight)
         scrollView.bounces = false
@@ -61,9 +62,10 @@ class PlacesViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.initView()
-        segmentationBar.addButton(text: "List", imageTxt: "fa-list")
+        segmentationBar.delegate = self
+        segmentationBar.addButton(text: "List", imageTxt: "fa-list" )
         segmentationBar.addButton(text:"Map", imageTxt: "fa-map")
-        
+        self.segmentationBar.setHighLightLine(offset: 0.0)
         
     }
     override func viewDidLoad() {
@@ -82,4 +84,49 @@ class PlacesViewController: UIViewController {
     }
     
 
+}
+
+extension PlacesViewController : UIScrollViewDelegate{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        self.segmentationBar.setHighLightLine(offset: scrollView.contentOffset.x)
+    
     }
+}
+extension PlacesViewController : SegmentationDelegate{
+    func didPressButton(button: Int) {
+        var point: CGPoint;
+        switch button {
+        case 1:
+            point = CGPoint(x: 0, y: 0)
+            break;
+        case 2:
+            point = CGPoint(x: self.view.frame.width, y: 0)
+            break;
+        default:
+            point = CGPoint(x: 0, y: 0)
+            break
+        }
+        
+        UIView.animate(withDuration: 0.45, delay:0, animations: {
+            
+            self.scrollView.contentOffset = point;
+            
+        }, completion: {completion in
+           
+        })
+        
+    }
+}
+
+extension PlacesViewController: PlaceViewModelDelegate{
+    func didFetchItems() {
+        //self.listVC?.viewModel.setPlaces(fetchedPlaces: (self.viewModel?.places)!)
+        self.listVC?.viewModel?.setPlaces(fetchedPlaces: (self.viewModel?.places)!)
+        
+        //self.listVC?.viewModel.places = (self.viewModel?.places)!;
+       // self.mapVC?.viewModel?.places = (self.viewModel?.places)!;
+    }
+}
+
+
