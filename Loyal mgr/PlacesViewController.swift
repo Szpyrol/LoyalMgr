@@ -10,6 +10,8 @@ import UIKit
 
 protocol PlacesViewControllerDelegate {
     func PlacesViewControllerDidFinish()
+    func PlaceViewDidSelectDetailedPlace(place:Place)
+    
     
 }
 
@@ -29,7 +31,7 @@ class PlacesViewController: UIViewController {
     
     func initView() {
        
-        
+        self.navigationItem.title = "Places"
         navigationBarHeight = self.navigationController!.navigationBar.frame.height
          let subViewHeight: CGFloat =
             self.view.frame.height
@@ -46,6 +48,9 @@ class PlacesViewController: UIViewController {
                                     width: self.view.frame.width,
                                     height: subViewHeight)
         
+        
+        
+        listVC?.delegate = self;
         scrollView.addSubview((listVC?.view)!)
         scrollView.addSubview((mapVC?.view)!)
         scrollView.contentInset = .zero
@@ -121,12 +126,18 @@ extension PlacesViewController : SegmentationDelegate{
 
 extension PlacesViewController: PlaceViewModelDelegate{
     func didFetchItems() {
-        //self.listVC?.viewModel.setPlaces(fetchedPlaces: (self.viewModel?.places)!)
+
         self.listVC?.viewModel?.setPlaces(fetchedPlaces: (self.viewModel?.places)!)
         
-        //self.listVC?.viewModel.places = (self.viewModel?.places)!;
-       // self.mapVC?.viewModel?.places = (self.viewModel?.places)!;
     }
+}
+
+extension PlacesViewController : PlaceListTableViewControllerDelegate{
+    func didChoosePlace(place: Place) {
+        self.delegate?.PlaceViewDidSelectDetailedPlace(place: place)
+        
+    }
+
 }
 
 

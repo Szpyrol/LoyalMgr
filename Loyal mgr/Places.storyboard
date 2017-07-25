@@ -22,36 +22,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a53-YM-cqB">
-                                <rect key="frame" x="0.0" y="152" width="375" height="515"/>
+                                <rect key="frame" x="0.0" y="126" width="375" height="541"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcA-F8-MtU" customClass="Segmentation" customModule="Loyal_mgr" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="106" width="375" height="46"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="D9H-Xm-T3s"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Loyal Mgr" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-eY-N7t">
-                                <rect key="frame" x="0.0" y="64" width="375" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="48k-xa-xd0"/>
-                                    <constraint firstAttribute="width" constant="375" id="TM2-b6-0jJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OKe-eY-N7t" firstAttribute="top" secondItem="s2d-QQ-H0L" secondAttribute="bottom" id="Etq-IZ-GDZ"/>
-                            <constraint firstItem="a53-YM-cqB" firstAttribute="top" secondItem="BcA-F8-MtU" secondAttribute="bottom" id="McX-WM-IpU"/>
+                            <constraint firstItem="a53-YM-cqB" firstAttribute="top" secondItem="BcA-F8-MtU" secondAttribute="bottom" constant="8" id="McX-WM-IpU"/>
                             <constraint firstAttribute="trailing" secondItem="a53-YM-cqB" secondAttribute="trailing" id="SkJ-zy-8fr"/>
                             <constraint firstItem="BcA-F8-MtU" firstAttribute="leading" secondItem="vsc-22-7Zl" secondAttribute="leading" id="TOX-0s-JZd"/>
                             <constraint firstAttribute="trailing" secondItem="BcA-F8-MtU" secondAttribute="trailing" id="VCb-NB-GqN"/>
                             <constraint firstItem="0eD-Tr-yIj" firstAttribute="top" secondItem="a53-YM-cqB" secondAttribute="bottom" id="W6a-90-gAH"/>
-                            <constraint firstItem="OKe-eY-N7t" firstAttribute="centerX" secondItem="vsc-22-7Zl" secondAttribute="centerX" id="i5X-u7-2RY"/>
-                            <constraint firstItem="BcA-F8-MtU" firstAttribute="top" secondItem="OKe-eY-N7t" secondAttribute="bottom" constant="8" id="mUp-s5-4jf"/>
+                            <constraint firstItem="BcA-F8-MtU" firstAttribute="top" secondItem="s2d-QQ-H0L" secondAttribute="bottom" constant="8" id="fsD-Zg-IHn"/>
                             <constraint firstItem="a53-YM-cqB" firstAttribute="leading" secondItem="vsc-22-7Zl" secondAttribute="leading" id="vNj-0g-Kr3"/>
                         </constraints>
                     </view>
@@ -60,7 +48,6 @@
                     <connections>
                         <outlet property="scrollView" destination="a53-YM-cqB" id="t0M-s5-6Oh"/>
                         <outlet property="segmentationBar" destination="BcA-F8-MtU" id="AWW-k2-IJg"/>
-                        <outlet property="welcomeLabel" destination="OKe-eY-N7t" id="Z3Y-7P-USJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pi-tS-fGv" userLabel="First Responder" sceneMemberID="firstResponder"/>

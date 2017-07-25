@@ -89,13 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Loyal mgr/PlacesListTableViewController.swift"
-            timestampString = "521664848.114842"
+            filePath = "Loyal mgr/UserLocManager.swift"
+            timestampString = "522682274.391017"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "didSetPlaces()"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "locationManager(manager:didUpdateToLocation:fromLocation:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,13 +105,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Loyal mgr/PlacesListViewModel.swift"
-            timestampString = "521662181.893219"
+            filePath = "Loyal mgr/UserLocManager.swift"
+            timestampString = "522682274.391017"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "setPlaces(fetchedPlaces:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "locationManager(manager:didChangeAuthorizationStatus:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

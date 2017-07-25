@@ -1,0 +1,16 @@
+[
+  {
+      "name":"Cięcie męskie",
+      "imageUrl":"http://www.onlinetaxaustralia.com.au/wp-content/uploads/2015/07/tax-deductions-hairdressers-online-tax-return.jpg",
+      "serviceDescription":"Opis pierwszego ciecia",
+      "price": "70.0"
+
+  
+  },
+  {
+      "name":"Cięcie Damskie",
+      "imageUrl":"http://cdn.newsapi.com.au/image/v1/38ede01d0cede8f826f1199a25005ae4?width=1024",
+      "serviceDescription":"Opis drugiego  ciecia",
+      "price": "199.99"
+  }
+]

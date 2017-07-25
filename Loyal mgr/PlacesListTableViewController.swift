@@ -8,13 +8,18 @@
 
 import UIKit
 
+protocol PlaceListTableViewControllerDelegate: class {
+    func didChoosePlace(place: Place)
+}
 class PlacesListTableViewController: UITableViewController {
 
     var viewModel: PlacesListViewModel!
+    weak var delegate: PlaceListTableViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         self.tableView.register(UINib(nibName: "PlaceTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "PlaceTableViewCell")
 
     }
@@ -43,7 +48,12 @@ class PlacesListTableViewController: UITableViewController {
         return 80.0
     }
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("did select row")
+        viewModel.didChoosePlaceToShow(indexPath: indexPath)
+        
+    }
     
     
    }
@@ -52,5 +62,8 @@ extension PlacesListTableViewController: PlacesListViewModelDelegate{
     func didSetPlaces() {
         self.tableView.reloadData()
     }
-    
+    func didChoosePlace(place: Place){
+        self.delegate?.didChoosePlace(place: place)
+        
+    }
 }

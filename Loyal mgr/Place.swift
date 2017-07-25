@@ -7,17 +7,19 @@
 //
 
 import UIKit
-
+import CoreLocation
 class Place: NSObject {
 
     var name: String?
+    var descriptionOfPlace: String?
     var imageUrl: String?
+    var latitude: String?
+    var longitude: String?
     
     init(dic: NSDictionary) {
         super.init()
      
-        
-        // Loop
+    
         for (key, value) in dic {
             let keyName = key as! String
             let keyValue: String = value as! String
@@ -27,8 +29,18 @@ class Place: NSObject {
                 self.setValue(keyValue, forKey: keyName)
             }
         }
-        // Or you can do it with using
-        // self.setValuesForKeysWithDictionary(JSONDictionary)
-        // instead of loop method above
+
     }
+    
+    func getLongitude()-> CLLocationDegrees
+    {
+        
+        return CLLocationDegrees(exactly: Double(longitude!)!)!
+    }
+    func getLatitude()-> CLLocationDegrees
+    {
+        
+        return CLLocationDegrees(exactly: Double(latitude!)!)!
+    }
+    
 }

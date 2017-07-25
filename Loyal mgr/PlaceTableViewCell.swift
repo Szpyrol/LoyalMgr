@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PlaceTableViewCell: UITableViewCell {
     @IBOutlet weak var placeImage: UIImageView!
@@ -22,11 +23,13 @@ class PlaceTableViewCell: UITableViewCell {
 
     func setCellModel(cellModel: PlaceCellModel){
         self.cellModel = cellModel
+        self.cellModel?.delegate = self
         refreshCellData()
     }
     func refreshCellData(){
         self.placeName.text = self.cellModel?.getName()
-        
+        self.placeImage.sd_setImage(with: self.cellModel?.getUrl()! as URL!)
+        self.distanceLabel.text = self.cellModel?.getDistance()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -35,4 +38,10 @@ class PlaceTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+}
+
+extension PlaceTableViewCell: PlaceCellModelDelegate{
+    func didGetUserLocation() {
+        self.refreshCellData()
+    }
 }

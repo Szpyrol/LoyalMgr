@@ -7,13 +7,51 @@
 //
 
 import Foundation
+import CoreLocation
+protocol PlaceCellModelDelegate: class {
+    func didGetUserLocation()
+}
+
 
 class PlaceCellModel{
     var place: Place
-    init(place: Place) {
+    var userLocation: CLLocation?
+    weak var delegate: PlaceCellModelDelegate?
+    
+    
+    init(place: Place ) {
         self.place = place
     }
-    func getName()-> String{
-        return self.place.name as! String
+    func getUrl()-> NSURL!{
+        return NSURL(string: self.place.imageUrl!)!
     }
+    
+    func getName()-> String{
+            if self.place.name != nil{
+                return self.place.name!
+            }else{
+                return ""
+        }
+    }
+    
+    func setUserLocation(userLocation: CLLocation)
+    {
+        self.userLocation = userLocation
+        self.delegate?.didGetUserLocation()
+    }
+    
+    func getDistance()-> String{
+        
+        let locA = CLLocation(latitude: self.place.getLatitude(), longitude: self.place.getLongitude())
+        if userLocation != nil{
+            let distance = locA.distance(from: self.userLocation!)
+            return String(format: "%.0f metrów",distance)
+        }else{
+            return "Calculating..."
+        }
+        
+    }
+    
+    
+    
 }

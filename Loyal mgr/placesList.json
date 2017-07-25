@@ -1,12 +1,17 @@
 [
   {
-  "name":"Fryzjer 1 ",
-  "imageUrl":"http://"
-  
+    "name":"Fryzjer 1 ",
+    "imageUrl":"http://www.onlinetaxaustralia.com.au/wp-content/uploads/2015/07/tax-deductions-hairdressers-online-tax-return.jpg",
+    "descriptionOfPlace":"Opis pierwszego miejsca",
+    "longitude": "19.9449699",
+    "latitude" : "50.0645501"
+ 
   },
   {
-  "name":"Fryzjer 2 ",
-  "imageUrl":"http://"
-  
+    "name":"Fryzjer 2 ",
+    "imageUrl":"http://cdn.newsapi.com.au/image/v1/38ede01d0cede8f826f1199a25005ae4?width=1024",
+    "descriptionOfPlace":"Opis drugiego miejsca",
+    "longitude": "19.9449899",
+    "latitude" : "50.0646501"
   }
 ]
