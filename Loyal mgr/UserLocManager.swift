@@ -74,8 +74,7 @@ class UserLocManager : NSObject{
 extension UserLocManager: CLLocationManagerDelegate{
  
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        print("did update location")
+
        let tempClosures = self.locationManagerClosures
         for closure in tempClosures {
             closure(locations[0])

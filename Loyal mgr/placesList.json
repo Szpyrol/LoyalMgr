@@ -4,7 +4,54 @@
     "imageUrl":"http://www.onlinetaxaustralia.com.au/wp-content/uploads/2015/07/tax-deductions-hairdressers-online-tax-return.jpg",
     "descriptionOfPlace":"Opis pierwszego miejsca",
     "longitude": "19.9449699",
-    "latitude" : "50.0645501"
+    "latitude" : "50.0645501",
+ "available":[
+
+              {
+              "name": "Tuesday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+              {
+              "name":"Wednesday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+              {
+              "name":"Thursday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+              {
+              "name":"Friday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+              {
+              "name": "Saturday",
+              "workingDay":true,
+              "opens":"10",
+              "closes":"17"
+              },
+              {
+              "name":"Sunday",
+              "workingDay":false,
+              "opens":"0",
+              "closes":"0"
+              },
+              {
+              "name":"Monday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+
+
+ ]
  
   },
   {
@@ -12,6 +59,56 @@
     "imageUrl":"http://cdn.newsapi.com.au/image/v1/38ede01d0cede8f826f1199a25005ae4?width=1024",
     "descriptionOfPlace":"Opis drugiego miejsca",
     "longitude": "19.9449899",
-    "latitude" : "50.0646501"
+    "latitude" : "50.0646501",
+ "available":[
+                            {
+              "name": "Tuesday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+              {
+              "name":"Wednesday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+              {
+              "name":"Thursday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+              {
+              "name":"Friday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+              {
+              "name": "Saturday",
+              "workingDay":true,
+              "opens":"10",
+              "closes":"17"
+              },
+              {
+              "name":"Sunday",
+              "workingDay":false,
+              "opens":"0",
+              "closes":"0"
+              },
+              {
+              "name":"Monday",
+              "workingDay":true,
+              "opens":"8",
+              "closes":"19"
+              },
+
+              
+              ]
+ 
+ 
+ 
+ 
   }
 ]

@@ -1,15 +1,16 @@
 [
   {
       "name":"Cięcie męskie",
-      "imageUrl":"http://www.onlinetaxaustralia.com.au/wp-content/uploads/2015/07/tax-deductions-hairdressers-online-tax-return.jpg",
+      "imageUrl":"http://www.klubznizek.pl/zdjecie/oferta/53a1a5aebaeff8.26954176.jpg/591/394",
       "serviceDescription":"Opis pierwszego ciecia",
       "price": "70.0"
+ 
 
   
   },
   {
       "name":"Cięcie Damskie",
-      "imageUrl":"http://cdn.newsapi.com.au/image/v1/38ede01d0cede8f826f1199a25005ae4?width=1024",
+      "imageUrl":"https://img2.styl.fm/newsy/galerie/2017/07/23460/426454-galeria-krotkich-fryzur-mega-kobiece-ciecia-dla-perfekcjonistek.jpg",
       "serviceDescription":"Opis drugiego  ciecia",
       "price": "199.99"
   }

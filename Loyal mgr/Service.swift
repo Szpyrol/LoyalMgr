@@ -15,6 +15,10 @@ class Service: NSObject{
     var price: Double?
     var imageUrl: String?
     
+    var id:Int?
+    var placeId: Int?
+    
+    
     
     init(dic: NSDictionary) {
         super.init()
@@ -22,11 +26,22 @@ class Service: NSObject{
         
         for (key, value) in dic {
             let keyName = key as! String
-            let keyValue: String = value as! String
+            if (keyName == "id" || keyName == "placeId")
+            {
+                let keyValue: Int = value as! Int
+                if (responds(to: Selector(keyName))) {
+                    self.setValue(keyValue, forKey: keyName)
+                }
+                
+            }
+            else{
+                
+                let keyValue: String = value as! String
             
-            // If property exists
-            if (responds(to: Selector(keyName))) {
-                self.setValue(keyValue, forKey: keyName)
+                // If property exists
+                if (responds(to: Selector(keyName))) {
+                    self.setValue(keyValue, forKey: keyName)
+                }
             }
         }
         

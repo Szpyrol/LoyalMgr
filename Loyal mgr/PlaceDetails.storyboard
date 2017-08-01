@@ -13,7 +13,6 @@
         <!--Place Details View Controller-->
         <scene sceneID="Gmv-IP-N08">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jGJ-Jr-OmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="PlaceDetailsViewController" id="Mch-kx-G2Y" customClass="PlaceDetailsViewController" customModule="Loyal_mgr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mcC-Ou-hvg"/>
@@ -84,6 +83,7 @@
                         <outlet property="placeImage" destination="Hwl-O7-jMm" id="Lif-oN-8bh"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGJ-Jr-OmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-234.40000000000001" y="69.715142428785612"/>
         </scene>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="572" y="58"/>
         </scene>
-        <!--View Controller-->
+        <!--Service Details View Controller-->
         <scene sceneID="FBx-HU-lFC">
             <objects>
-                <viewController id="t8A-dB-jHt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ServiceDetailsViewController" id="t8A-dB-jHt" customClass="ServiceDetailsViewController" customModule="Loyal_mgr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pqa-L5-3cA"/>
                         <viewControllerLayoutGuide type="bottom" id="LH2-go-PXv"/>
@@ -126,40 +126,152 @@
                     <view key="view" contentMode="scaleToFill" id="nG9-IW-xyI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vwm-5M-KDa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="244" id="BrZ-zf-2AB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdx-Z0-T75">
+                                <rect key="frame" x="0.0" y="610" width="375" height="57"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="wFL-Be-ZGp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="ZAMÓW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="orderAction:" destination="t8A-dB-jHt" eventType="touchUpInside" id="OVJ-QZ-TES"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-Da-CyB">
+                                <rect key="frame" x="16" y="252" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b4o-Da-CyB" firstAttribute="top" secondItem="Vwm-5M-KDa" secondAttribute="bottom" constant="8" id="0YZ-sy-8MP"/>
+                            <constraint firstItem="LH2-go-PXv" firstAttribute="top" secondItem="wdx-Z0-T75" secondAttribute="bottom" id="2wk-wu-QV7"/>
+                            <constraint firstItem="wdx-Z0-T75" firstAttribute="leading" secondItem="nG9-IW-xyI" secondAttribute="leading" id="K8u-al-wbZ"/>
+                            <constraint firstItem="wdx-Z0-T75" firstAttribute="top" relation="greaterThanOrEqual" secondItem="b4o-Da-CyB" secondAttribute="bottom" constant="8" id="Ms4-qJ-JhB"/>
+                            <constraint firstAttribute="trailing" secondItem="Vwm-5M-KDa" secondAttribute="trailing" id="Y01-1W-SKk"/>
+                            <constraint firstItem="Vwm-5M-KDa" firstAttribute="leading" secondItem="nG9-IW-xyI" secondAttribute="leading" id="Y9H-bu-EdP"/>
+                            <constraint firstItem="b4o-Da-CyB" firstAttribute="trailing" secondItem="nG9-IW-xyI" secondAttribute="trailingMargin" id="dZS-nw-fC6"/>
+                            <constraint firstAttribute="trailing" secondItem="wdx-Z0-T75" secondAttribute="trailing" id="q1N-el-poN"/>
+                            <constraint firstItem="b4o-Da-CyB" firstAttribute="leading" secondItem="nG9-IW-xyI" secondAttribute="leadingMargin" id="vih-py-heN"/>
+                            <constraint firstItem="Vwm-5M-KDa" firstAttribute="top" secondItem="nG9-IW-xyI" secondAttribute="top" id="yWZ-sX-4Ve"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="serviceDescription" destination="b4o-Da-CyB" id="s2I-uA-bWd"/>
+                        <outlet property="serviceImg" destination="Vwm-5M-KDa" id="xee-p2-cQM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXa-Qn-b0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="70"/>
+            <point key="canvasLocation" x="1452" y="69.715142428785612"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="b33-kB-eEJ">
+        <!--Service Order View Controller-->
+        <scene sceneID="cvm-Ry-Obg">
             <objects>
-                <tableViewController id="OVi-nf-FZk" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cen-cd-Xrl">
+                <viewController storyboardIdentifier="ServiceOrderViewController" id="bsy-l0-PDC" customClass="ServiceOrderViewController" customModule="Loyal_mgr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IPe-Hh-OQz"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRz-lD-ZVW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qOi-rh-jHe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Propozycja daty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mex-BS-tWZ">
+                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="q6f-he-J3Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="fpq-aF-0zW">
+                                <rect key="frame" x="0.0" y="57" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="hPH-n0-2TH"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="522741846.22909898">
+                                    <!--2017-07-26 06:04:06 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pl"/>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="bsy-l0-PDC" eventType="valueChanged" id="Tit-SB-iqG"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wybierz rabat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utp-am-xjs">
+                                <rect key="frame" x="16" y="281" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="mdC-7M-LmY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CX9-kw-BSH">
+                                <rect key="frame" x="0.0" y="610" width="375" height="57"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="5if-je-thV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Wyślij zapytanie">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendRequest:" destination="bsy-l0-PDC" eventType="touchUpInside" id="83a-z5-EUb"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WdY-fn-mWg">
+                                <rect key="frame" x="0.0" y="318" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="3y4-Mg-CNV"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="lNJ-d9-F7c">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lNJ-d9-F7c" id="wgo-gQ-sCy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="OVi-nf-FZk" id="LWS-a1-tAk"/>
-                            <outlet property="delegate" destination="OVi-nf-FZk" id="xsW-3n-jHo"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UDx-D0-GoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="Utp-am-xjs" firstAttribute="top" secondItem="fpq-aF-0zW" secondAttribute="bottom" constant="8" id="4Nr-Vf-ejj"/>
+                            <constraint firstAttribute="trailing" secondItem="CX9-kw-BSH" secondAttribute="trailing" id="7I7-UO-P3Y"/>
+                            <constraint firstItem="CX9-kw-BSH" firstAttribute="leading" secondItem="qOi-rh-jHe" secondAttribute="leading" id="ClY-p3-3Rc"/>
+                            <constraint firstItem="Utp-am-xjs" firstAttribute="leading" secondItem="qOi-rh-jHe" secondAttribute="leadingMargin" id="MZ0-jQ-KlP"/>
+                            <constraint firstItem="fpq-aF-0zW" firstAttribute="leading" secondItem="qOi-rh-jHe" secondAttribute="leading" id="Pbi-Jc-P5e"/>
+                            <constraint firstAttribute="trailing" secondItem="WdY-fn-mWg" secondAttribute="trailing" id="e1i-t1-1Iq"/>
+                            <constraint firstItem="CRz-lD-ZVW" firstAttribute="top" secondItem="CX9-kw-BSH" secondAttribute="bottom" id="ejK-dH-jl4"/>
+                            <constraint firstItem="Mex-BS-tWZ" firstAttribute="top" secondItem="IPe-Hh-OQz" secondAttribute="bottom" constant="8" id="f45-xJ-f6j"/>
+                            <constraint firstItem="fpq-aF-0zW" firstAttribute="top" secondItem="Mex-BS-tWZ" secondAttribute="bottom" constant="8" id="fZf-TO-4P5"/>
+                            <constraint firstItem="WdY-fn-mWg" firstAttribute="top" secondItem="Utp-am-xjs" secondAttribute="bottom" constant="8" id="hbU-Ow-faH"/>
+                            <constraint firstItem="Mex-BS-tWZ" firstAttribute="trailing" secondItem="qOi-rh-jHe" secondAttribute="trailingMargin" id="jEI-Y5-KuY"/>
+                            <constraint firstItem="WdY-fn-mWg" firstAttribute="leading" secondItem="qOi-rh-jHe" secondAttribute="leading" id="jdq-lP-Kfc"/>
+                            <constraint firstAttribute="trailing" secondItem="fpq-aF-0zW" secondAttribute="trailing" id="kjI-UX-6Cc"/>
+                            <constraint firstItem="Mex-BS-tWZ" firstAttribute="leading" secondItem="qOi-rh-jHe" secondAttribute="leadingMargin" id="lz5-8x-qtL"/>
+                            <constraint firstItem="Utp-am-xjs" firstAttribute="trailing" secondItem="qOi-rh-jHe" secondAttribute="trailingMargin" id="uFu-gY-9GV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="fpq-aF-0zW" id="lkB-Pi-EEd"/>
+                        <outlet property="discountPicker" destination="WdY-fn-mWg" id="etf-0x-Kq9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QpS-bs-BwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2368" y="71"/>
+            <point key="canvasLocation" x="2308" y="69.715142428785612"/>
         </scene>
     </scenes>
 </document>

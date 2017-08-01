@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 protocol PlacesViewControllerDelegate {
     func PlacesViewControllerDidFinish()
@@ -28,15 +29,24 @@ class PlacesViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
    
+    func menuButtonPressed(){
+    
+        self.present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+        
+    }
     
     func initView() {
        
+        let menuIcon = String.fontAwesomeIcon(code: "fa-bars")
+        let leftButton = UIBarButtonItem(title: menuIcon, style: .plain, target: self, action: #selector(self.menuButtonPressed))
+        leftButton.setTitleTextAttributes([NSFontAttributeName:UIFont.fontAwesome(ofSize: 20)], for: .normal)
+        self.navigationItem.leftBarButtonItem = leftButton
+
         self.navigationItem.title = "Places"
         navigationBarHeight = self.navigationController!.navigationBar.frame.height
          let subViewHeight: CGFloat =
             self.view.frame.height
-            //- self.welcomeLabel.frame.height
-           // - self.segmentationBar.frame.height
+
         
         listVC?.view.frame = CGRect(x: 0,
                                     y: 0,
@@ -60,9 +70,6 @@ class PlacesViewController: UIViewController {
         scrollView.bounces = false
         
         
-        
-        
-        
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -75,9 +82,7 @@ class PlacesViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-               // Do any additional setup after loading the view.
+
         
     }
 

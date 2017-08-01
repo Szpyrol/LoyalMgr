@@ -7,17 +7,19 @@
 //
 
 import UIKit
-protocol PlaceServicesTableViewControllerDelegate{
+protocol PlaceServicesTableViewControllerDelegate {
     func didChooseService(service: Service)
 }
 class PlaceServicesTableViewController: UITableViewController {
 
     var viewModel: PlaceServicesViewModel?
+    var delegate: PlaceServicesTableViewControllerDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.register(UINib(nibName: "ServiceTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "ServiceTableViewCell")
-
+        self.title = "Usługi"
         
     }
 
@@ -45,9 +47,9 @@ class PlaceServicesTableViewController: UITableViewController {
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
+        self.viewModel?.chooseService(index: indexPath.row)
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -74,7 +76,8 @@ extension PlaceServicesTableViewController: PlaceServicesViewModelDelegate{
     }
     func didChooseService(service: Service) {
         
-        self.didChooseService(service: service)
+        self.delegate?.didChooseService(service: service)
+        //didChooseService(service: service)
         
     }
     

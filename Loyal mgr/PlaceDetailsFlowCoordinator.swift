@@ -16,6 +16,7 @@ class PlaceDetailsFlowCoordinator: FlowCoordinator {
 
     required init(configure: FlowConfigure) {
         self.configure = configure
+    //    self.childFlow?.configure = self
     }
 
     func setPlace(placeToSet: Place){
@@ -42,7 +43,7 @@ class PlaceDetailsFlowCoordinator: FlowCoordinator {
         let viewController = storyboard.instantiateViewController(withIdentifier :"PlaceServicesTableViewController") as! PlaceServicesTableViewController
         viewController.viewModel = PlaceServicesViewModel(viewController: viewController)
         viewController.viewModel?.fetchItems()
-        //viewController.viewModel?.delegate = viewController
+        viewController.delegate = self
         
         configure.navigationController?.pushViewController(viewController, animated: true)
         
@@ -51,8 +52,33 @@ class PlaceDetailsFlowCoordinator: FlowCoordinator {
     
     func startServiceController(service: Service){
         
+        let storyboard = UIStoryboard(name: "PlaceDetails", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"ServiceDetailsViewController") as! ServiceDetailsViewController
+        viewController.viewModel = ServiceDetailsViewModel(initService: service)
+        viewController.delegate = self
+        configure.navigationController?.pushViewController(viewController, animated: true)
     }
     
+    
+    func startOrder(service: Service){
+        
+        let storyboard = UIStoryboard(name: "PlaceDetails", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"ServiceOrderViewController") as! ServiceOrderViewController
+        viewController.viewModel = ServiceOrderViewModel(vc: viewController,service: service, place: self.place!)
+        viewController.delegate = self
+        //viewController.viewModel?.fetchItems()
+        
+        configure.navigationController?.pushViewController(viewController, animated: true)
+        print("start order")
+        
+    }
+    
+    func didFinishFlow(){
+        
+        self.configure.navigationController?.popToRootViewController(animated: true)
+        
+        
+    }
 }
 extension PlaceDetailsFlowCoordinator: PlaceDetailsViewControllerDelegate{
     func didChooseToCheckServices() {
@@ -61,9 +87,19 @@ extension PlaceDetailsFlowCoordinator: PlaceDetailsViewControllerDelegate{
 }
 extension PlaceDetailsFlowCoordinator: PlaceServicesTableViewControllerDelegate{
     func didChooseService(service: Service) {
-        self.startServiceController(service: Service)
+        self.startServiceController(service: service)
+    }
+}
+extension PlaceDetailsFlowCoordinator: ServiceDetailsViewControllerDelegate{
+    func wishToOrder(service: Service) {
+        startOrder(service: service)
         
-       
+    }
+}
+extension PlaceDetailsFlowCoordinator: ServiceOrderViewControllerDelegate{
+    func didPressSendRequest() {
+        
+        didFinishFlow()
         
     }
 }

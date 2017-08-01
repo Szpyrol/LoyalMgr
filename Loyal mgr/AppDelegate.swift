@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let splashFlow = SplashFlowCoordinator(configure: configure)
         splashFlow.start()
         
-        
+              
         return true
     }
 

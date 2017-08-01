@@ -25,7 +25,36 @@ class PlaceServicesViewModel{
     
     func fetchItems(){
     
-        let listOfServices :NSArray = loadJson(filename: "servicesList")!
+        API.sharedInstance.getServices(completion: {(services, error) in
+            
+            
+            
+            if(services != nil)
+            {
+                let listOfServices :NSArray = services! as NSArray
+                for dic in listOfServices
+                {
+                    
+                    let newService =  Service(dic: dic as! NSDictionary)
+                    self.services.append(newService)
+                    self.servicesViewModels?.append(ServiceCellViewModel(service: newService))
+
+                }
+            
+                self.delegate?.didFetchItems()
+            }
+            
+            
+        })
+
+        
+        
+        
+        
+        
+        
+        
+       /* let listOfServices :NSArray = loadJson(filename: "servicesList")!
         print(listOfServices)
         for dic in listOfServices
         {
@@ -36,7 +65,7 @@ class PlaceServicesViewModel{
         }
         
         self.delegate?.didFetchItems()
-        
+        */
     }
     
     func loadJson(filename fileName: String) -> NSArray?

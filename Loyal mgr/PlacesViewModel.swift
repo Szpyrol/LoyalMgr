@@ -22,7 +22,26 @@ class PlacesViewModel {
     }
     func fetchItems(){
        
-            let listOfPlaces :NSArray = loadJson(filename: "placesList")!
+        API.sharedInstance.getPlaces(completion: {(places, error) in
+            
+          
+       
+            
+            let listOfPlaces :NSArray = places! as NSArray
+            print(listOfPlaces)
+            for dic in listOfPlaces
+            {
+                
+                let newPlace =  Place(dic: dic as! NSDictionary)
+                self.places.append(newPlace)
+            }
+            
+            self.delegate?.didFetchItems()
+            
+            
+            
+        })
+           /* let listOfPlaces :NSArray = loadJson(filename: "placesList")!
             print(listOfPlaces)
             for dic in listOfPlaces
             {
@@ -32,6 +51,7 @@ class PlacesViewModel {
             }
         
             self.delegate?.didFetchItems()
+ */
         
     }
     
