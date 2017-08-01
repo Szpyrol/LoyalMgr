@@ -56,6 +56,15 @@
 		B34791341F30A5C100BF30F4 /* SettingsFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791331F30A5C100BF30F4 /* SettingsFlowCoordinator.swift */; };
 		B34791361F30A7E400BF30F4 /* DiscountsFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791351F30A7E400BF30F4 /* DiscountsFlowCoordinator.swift */; };
 		B34791381F30A81800BF30F4 /* OrdersFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791371F30A81800BF30F4 /* OrdersFlowCoordinator.swift */; };
+		B347913F1F30D1E600BF30F4 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347913D1F30D1E600BF30F4 /* OrderTableViewCell.swift */; };
+		B34791401F30D1E600BF30F4 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B347913E1F30D1E600BF30F4 /* OrderTableViewCell.xib */; };
+		B34791421F30D33C00BF30F4 /* OrdersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791411F30D33C00BF30F4 /* OrdersListViewModel.swift */; };
+		B34791441F30D4C300BF30F4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791431F30D4C300BF30F4 /* Order.swift */; };
+		B34791461F30D74500BF30F4 /* Dicounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791451F30D74500BF30F4 /* Dicounts.swift */; };
+		B34791481F30D7A400BF30F4 /* DiscountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791471F30D7A400BF30F4 /* DiscountsViewModel.swift */; };
+		B347914A1F30D7BD00BF30F4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791491F30D7BD00BF30F4 /* SettingsViewModel.swift */; };
+		B347914E1F30D83A00BF30F4 /* DiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347914C1F30D83A00BF30F4 /* DiscountTableViewCell.swift */; };
+		B347914F1F30D83A00BF30F4 /* DiscountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B347914D1F30D83A00BF30F4 /* DiscountTableViewCell.xib */; };
 		B39DD1321F275372009499F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39DD1311F275372009499F5 /* CoreLocation.framework */; };
 		B39DD1371F2773C0009499F5 /* UserLocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DD1361F2773C0009499F5 /* UserLocManager.swift */; };
 		B39DD13C1F2791C9009499F5 /* PlaceServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DD13B1F2791C9009499F5 /* PlaceServicesTableViewController.swift */; };
@@ -144,6 +153,15 @@
 		B34791331F30A5C100BF30F4 /* SettingsFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsFlowCoordinator.swift; sourceTree = "<group>"; };
 		B34791351F30A7E400BF30F4 /* DiscountsFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountsFlowCoordinator.swift; sourceTree = "<group>"; };
 		B34791371F30A81800BF30F4 /* OrdersFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersFlowCoordinator.swift; sourceTree = "<group>"; };
+		B347913D1F30D1E600BF30F4 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		B347913E1F30D1E600BF30F4 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		B34791411F30D33C00BF30F4 /* OrdersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersListViewModel.swift; sourceTree = "<group>"; };
+		B34791431F30D4C300BF30F4 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		B34791451F30D74500BF30F4 /* Dicounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dicounts.swift; sourceTree = "<group>"; };
+		B34791471F30D7A400BF30F4 /* DiscountsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountsViewModel.swift; sourceTree = "<group>"; };
+		B34791491F30D7BD00BF30F4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B347914C1F30D83A00BF30F4 /* DiscountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountTableViewCell.swift; sourceTree = "<group>"; };
+		B347914D1F30D83A00BF30F4 /* DiscountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscountTableViewCell.xib; sourceTree = "<group>"; };
 		B39DD1311F275372009499F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B39DD1361F2773C0009499F5 /* UserLocManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocManager.swift; sourceTree = "<group>"; };
 		B39DD13B1F2791C9009499F5 /* PlaceServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceServicesTableViewController.swift; sourceTree = "<group>"; };
@@ -364,6 +382,8 @@
 				B31E60631EA2570000F2CB77 /* Place.swift */,
 				B39DD1461F279EEE009499F5 /* Service.swift */,
 				B32329DB1F286F5D00409A2E /* Day.swift */,
+				B34791431F30D4C300BF30F4 /* Order.swift */,
+				B34791451F30D74500BF30F4 /* Dicounts.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -505,6 +525,7 @@
 		B34791211F30A26E00BF30F4 /* VM */ = {
 			isa = PBXGroup;
 			children = (
+				B34791491F30D7BD00BF30F4 /* SettingsViewModel.swift */,
 			);
 			name = VM;
 			sourceTree = "<group>";
@@ -520,6 +541,7 @@
 		B34791231F30A27A00BF30F4 /* VM */ = {
 			isa = PBXGroup;
 			children = (
+				B34791471F30D7A400BF30F4 /* DiscountsViewModel.swift */,
 			);
 			name = VM;
 			sourceTree = "<group>";
@@ -527,6 +549,7 @@
 		B34791241F30A28000BF30F4 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				B347914B1F30D82400BF30F4 /* DiscountCell */,
 				B34791291F30A2BE00BF30F4 /* DiscountsViewController.swift */,
 			);
 			name = VC;
@@ -535,6 +558,7 @@
 		B34791251F30A28800BF30F4 /* VM */ = {
 			isa = PBXGroup;
 			children = (
+				B34791411F30D33C00BF30F4 /* OrdersListViewModel.swift */,
 			);
 			name = VM;
 			sourceTree = "<group>";
@@ -542,9 +566,28 @@
 		B34791261F30A28C00BF30F4 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				B347913C1F30D1AC00BF30F4 /* OrderCell */,
 				B347912B1F30A2CB00BF30F4 /* OrdersViewController.swift */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		B347913C1F30D1AC00BF30F4 /* OrderCell */ = {
+			isa = PBXGroup;
+			children = (
+				B347913D1F30D1E600BF30F4 /* OrderTableViewCell.swift */,
+				B347913E1F30D1E600BF30F4 /* OrderTableViewCell.xib */,
+			);
+			name = OrderCell;
+			sourceTree = "<group>";
+		};
+		B347914B1F30D82400BF30F4 /* DiscountCell */ = {
+			isa = PBXGroup;
+			children = (
+				B347914C1F30D83A00BF30F4 /* DiscountTableViewCell.swift */,
+				B347914D1F30D83A00BF30F4 /* DiscountTableViewCell.xib */,
+			);
+			name = DiscountCell;
 			sourceTree = "<group>";
 		};
 		B39DD1331F277368009499F5 /* Tools */ = {
@@ -757,7 +800,9 @@
 			files = (
 				B31E60831EA524EA00F2CB77 /* placeImg.jpg in Resources */,
 				B31E602B1EA2390900F2CB77 /* LaunchScreen.storyboard in Resources */,
+				B34791401F30D1E600BF30F4 /* OrderTableViewCell.xib in Resources */,
 				B31E606B1EA2774100F2CB77 /* Places.storyboard in Resources */,
+				B347914F1F30D83A00BF30F4 /* DiscountTableViewCell.xib in Resources */,
 				B33613371F17D4FD00CFA22F /* placesList.json in Resources */,
 				B31E605F1EA24B8400F2CB77 /* SplashScreen.storyboard in Resources */,
 				B32329DE1F289A7C00409A2E /* userDiscounts.json in Resources */,
@@ -844,6 +889,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39DD1431F279C26009499F5 /* ServiceCellViewModel.swift in Sources */,
+				B347914A1F30D7BD00BF30F4 /* SettingsViewModel.swift in Sources */,
 				B34791381F30A81800BF30F4 /* OrdersFlowCoordinator.swift in Sources */,
 				B31E60761EA388D600F2CB77 /* PlacesMapViewModel.swift in Sources */,
 				B32329DC1F286F5D00409A2E /* Day.swift in Sources */,
@@ -868,17 +914,23 @@
 				B34791341F30A5C100BF30F4 /* SettingsFlowCoordinator.swift in Sources */,
 				B31E60781EA3935A00F2CB77 /* Segmentation.swift in Sources */,
 				B39DD1451F279EA7009499F5 /* PlaceServicesViewModel.swift in Sources */,
+				B347914E1F30D83A00BF30F4 /* DiscountTableViewCell.swift in Sources */,
 				B31E60581EA23B2A00F2CB77 /* SplashViewController.swift in Sources */,
 				B34791361F30A7E400BF30F4 /* DiscountsFlowCoordinator.swift in Sources */,
+				B34791421F30D33C00BF30F4 /* OrdersListViewModel.swift in Sources */,
 				B34791281F30A2AE00BF30F4 /* SettingsViewController.swift in Sources */,
+				B34791481F30D7A400BF30F4 /* DiscountsViewModel.swift in Sources */,
 				B31E60811EA5220900F2CB77 /* PlaceCellModel.swift in Sources */,
 				B31E605A1EA2443D00F2CB77 /* MainFlowCoordinator.swift in Sources */,
 				B39DD1371F2773C0009499F5 /* UserLocManager.swift in Sources */,
 				B347912A1F30A2BE00BF30F4 /* DiscountsViewController.swift in Sources */,
 				B39DD1501F27DF8A009499F5 /* ServiceDetailsViewModel.swift in Sources */,
+				B34791461F30D74500BF30F4 /* Dicounts.swift in Sources */,
+				B347913F1F30D1E600BF30F4 /* OrderTableViewCell.swift in Sources */,
 				B39DD13C1F2791C9009499F5 /* PlaceServicesTableViewController.swift in Sources */,
 				B39DD14E1F27DD65009499F5 /* ServiceDetailsViewController.swift in Sources */,
 				B31E60551EA23AF800F2CB77 /* SplashFlowCoordinator.swift in Sources */,
+				B34791441F30D4C300BF30F4 /* Order.swift in Sources */,
 				B30667791F1A4DD500511AA5 /* PlaceDetailsViewModel.swift in Sources */,
 				B31E607C1EA5159400F2CB77 /* PlaceTableViewCell.swift in Sources */,
 				B312D7031F2C9CBB00AC85C8 /* API.swift in Sources */,

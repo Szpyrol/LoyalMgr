@@ -118,7 +118,6 @@ extension MainFlowCoordinator: MenuViewControllerDelegate{
         menuLeftNavigationController.dismiss(animated: true, completion: {
         switch index {
         case 1://lokale
-          //  self.startPlaces()
             self.preparationForFlow(starting:
                 self.startPlaces(navController:))
             break;
