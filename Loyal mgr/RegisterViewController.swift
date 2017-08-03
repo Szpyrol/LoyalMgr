@@ -8,11 +8,26 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
-
+class RegisterViewController: UITableViewController {
+    
+    @IBOutlet weak var firstCell: FormTableViewCell!
+    @IBOutlet weak var surnameCell: FormTableViewCell!
+    @IBOutlet weak var passwordCell: FormTableViewCell!
+    @IBOutlet weak var passwordRepeatCell: FormTableViewCell!
+    @IBOutlet weak var phoneCell: FormTableViewCell!
+    @IBOutlet weak var emailCell: FormTableViewCell!
+    
+    
+    
+    
+    
+    
+    @IBAction func signUpAction(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Register"
         // Do any additional setup after loading the view.
     }
 

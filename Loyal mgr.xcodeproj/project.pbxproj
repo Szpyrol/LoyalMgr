@@ -65,6 +65,9 @@
 		B347914A1F30D7BD00BF30F4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791491F30D7BD00BF30F4 /* SettingsViewModel.swift */; };
 		B347914E1F30D83A00BF30F4 /* DiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347914C1F30D83A00BF30F4 /* DiscountTableViewCell.swift */; };
 		B347914F1F30D83A00BF30F4 /* DiscountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B347914D1F30D83A00BF30F4 /* DiscountTableViewCell.xib */; };
+		B34791511F30E1C600BF30F4 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34791501F30E1C600BF30F4 /* Authorization.storyboard */; };
+		B34791561F30E2F400BF30F4 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791551F30E2F400BF30F4 /* AuthorizationViewController.swift */; };
+		B34791581F30E44000BF30F4 /* AuthorizationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791571F30E44000BF30F4 /* AuthorizationFlowCoordinator.swift */; };
 		B39DD1321F275372009499F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39DD1311F275372009499F5 /* CoreLocation.framework */; };
 		B39DD1371F2773C0009499F5 /* UserLocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DD1361F2773C0009499F5 /* UserLocManager.swift */; };
 		B39DD13C1F2791C9009499F5 /* PlaceServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DD13B1F2791C9009499F5 /* PlaceServicesTableViewController.swift */; };
@@ -76,6 +79,12 @@
 		B39DD1491F27A345009499F5 /* servicesList.json in Resources */ = {isa = PBXBuildFile; fileRef = B39DD1481F27A345009499F5 /* servicesList.json */; };
 		B39DD14E1F27DD65009499F5 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DD14D1F27DD65009499F5 /* ServiceDetailsViewController.swift */; };
 		B39DD1501F27DF8A009499F5 /* ServiceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39DD14F1F27DF8A009499F5 /* ServiceDetailsViewModel.swift */; };
+		B3C91D3F1F312A3E0091D708 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C91D3E1F312A3E0091D708 /* LoginViewController.swift */; };
+		B3C91D411F312A4C0091D708 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C91D401F312A4C0091D708 /* RegisterViewController.swift */; };
+		B3C91D431F312AB80091D708 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C91D421F312AB80091D708 /* AuthorizationViewModel.swift */; };
+		B3C91D451F312AFD0091D708 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C91D441F312AFD0091D708 /* LoginViewModel.swift */; };
+		B3C91D471F312B0D0091D708 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C91D461F312B0D0091D708 /* RegisterViewModel.swift */; };
+		B3C91D491F3141F70091D708 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C91D481F3141F70091D708 /* FormTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +171,9 @@
 		B34791491F30D7BD00BF30F4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		B347914C1F30D83A00BF30F4 /* DiscountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountTableViewCell.swift; sourceTree = "<group>"; };
 		B347914D1F30D83A00BF30F4 /* DiscountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscountTableViewCell.xib; sourceTree = "<group>"; };
+		B34791501F30E1C600BF30F4 /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		B34791551F30E2F400BF30F4 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		B34791571F30E44000BF30F4 /* AuthorizationFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationFlowCoordinator.swift; sourceTree = "<group>"; };
 		B39DD1311F275372009499F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B39DD1361F2773C0009499F5 /* UserLocManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocManager.swift; sourceTree = "<group>"; };
 		B39DD13B1F2791C9009499F5 /* PlaceServicesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceServicesTableViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +185,12 @@
 		B39DD1481F27A345009499F5 /* servicesList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = servicesList.json; sourceTree = "<group>"; };
 		B39DD14D1F27DD65009499F5 /* ServiceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewController.swift; sourceTree = "<group>"; };
 		B39DD14F1F27DF8A009499F5 /* ServiceDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewModel.swift; sourceTree = "<group>"; };
+		B3C91D3E1F312A3E0091D708 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B3C91D401F312A4C0091D708 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B3C91D421F312AB80091D708 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		B3C91D441F312AFD0091D708 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B3C91D461F312B0D0091D708 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		B3C91D481F3141F70091D708 /* FormTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +380,7 @@
 				B34791311F30A31800BF30F4 /* Settings.storyboard */,
 				B347912D1F30A2FC00BF30F4 /* Discounts.storyboard */,
 				B347912F1F30A30900BF30F4 /* Orders.storyboard */,
+				B34791501F30E1C600BF30F4 /* Authorization.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -391,6 +410,7 @@
 		B31E60621EA256BD00F2CB77 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B34791521F30E2B700BF30F4 /* Authorization */,
 				B32329E81F28D5BC00409A2E /* Settings */,
 				B32329E71F28D5B100409A2E /* Discounts */,
 				B32329E61F28D5A200409A2E /* Orders */,
@@ -588,6 +608,37 @@
 				B347914D1F30D83A00BF30F4 /* DiscountTableViewCell.xib */,
 			);
 			name = DiscountCell;
+			sourceTree = "<group>";
+		};
+		B34791521F30E2B700BF30F4 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				B34791541F30E2CE00BF30F4 /* VC */,
+				B34791531F30E2C500BF30F4 /* VM */,
+				B34791571F30E44000BF30F4 /* AuthorizationFlowCoordinator.swift */,
+			);
+			name = Authorization;
+			sourceTree = "<group>";
+		};
+		B34791531F30E2C500BF30F4 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				B3C91D421F312AB80091D708 /* AuthorizationViewModel.swift */,
+				B3C91D441F312AFD0091D708 /* LoginViewModel.swift */,
+				B3C91D461F312B0D0091D708 /* RegisterViewModel.swift */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		B34791541F30E2CE00BF30F4 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B34791551F30E2F400BF30F4 /* AuthorizationViewController.swift */,
+				B3C91D3E1F312A3E0091D708 /* LoginViewController.swift */,
+				B3C91D401F312A4C0091D708 /* RegisterViewController.swift */,
+				B3C91D481F3141F70091D708 /* FormTableViewCell.swift */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 		B39DD1331F277368009499F5 /* Tools */ = {
@@ -809,6 +860,7 @@
 				B31E60281EA2390900F2CB77 /* Assets.xcassets in Resources */,
 				B34791301F30A30900BF30F4 /* Orders.storyboard in Resources */,
 				B31E60231EA2390900F2CB77 /* Main.storyboard in Resources */,
+				B34791511F30E1C600BF30F4 /* Authorization.storyboard in Resources */,
 				B31E607D1EA5159400F2CB77 /* PlaceTableViewCell.xib in Resources */,
 				B32329E01F28B32200409A2E /* Podfile in Resources */,
 				B34791321F30A31800BF30F4 /* Settings.storyboard in Resources */,
@@ -895,6 +947,7 @@
 				B32329DC1F286F5D00409A2E /* Day.swift in Sources */,
 				B39DD1401F279A21009499F5 /* ServiceTableViewCell.swift in Sources */,
 				B32329E51F28BA5700409A2E /* MenuViewController.swift in Sources */,
+				B3C91D451F312AFD0091D708 /* LoginViewModel.swift in Sources */,
 				B31E60501EA23A5600F2CB77 /* FlowCoordinator.swift in Sources */,
 				B32329D81F2867F000409A2E /* ServiceOrderViewController.swift in Sources */,
 				B31E60261EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld in Sources */,
@@ -902,6 +955,7 @@
 				B31E60721EA2AA2900F2CB77 /* PlacesListViewModel.swift in Sources */,
 				B31E60681EA2771C00F2CB77 /* PlacesViewController.swift in Sources */,
 				B30667701F1A4ACE00511AA5 /* PlaceDetailsFlowCoordinator.swift in Sources */,
+				B34791581F30E44000BF30F4 /* AuthorizationFlowCoordinator.swift in Sources */,
 				B31E60201EA2390900F2CB77 /* ViewController.swift in Sources */,
 				B31E60661EA276D500F2CB77 /* PlacesFlowCoordinator.swift in Sources */,
 				B31E60701EA2AA1700F2CB77 /* PlacesListTableViewController.swift in Sources */,
@@ -917,6 +971,7 @@
 				B347914E1F30D83A00BF30F4 /* DiscountTableViewCell.swift in Sources */,
 				B31E60581EA23B2A00F2CB77 /* SplashViewController.swift in Sources */,
 				B34791361F30A7E400BF30F4 /* DiscountsFlowCoordinator.swift in Sources */,
+				B3C91D411F312A4C0091D708 /* RegisterViewController.swift in Sources */,
 				B34791421F30D33C00BF30F4 /* OrdersListViewModel.swift in Sources */,
 				B34791281F30A2AE00BF30F4 /* SettingsViewController.swift in Sources */,
 				B34791481F30D7A400BF30F4 /* DiscountsViewModel.swift in Sources */,
@@ -924,11 +979,16 @@
 				B31E605A1EA2443D00F2CB77 /* MainFlowCoordinator.swift in Sources */,
 				B39DD1371F2773C0009499F5 /* UserLocManager.swift in Sources */,
 				B347912A1F30A2BE00BF30F4 /* DiscountsViewController.swift in Sources */,
+				B34791561F30E2F400BF30F4 /* AuthorizationViewController.swift in Sources */,
+				B3C91D3F1F312A3E0091D708 /* LoginViewController.swift in Sources */,
+				B3C91D431F312AB80091D708 /* AuthorizationViewModel.swift in Sources */,
 				B39DD1501F27DF8A009499F5 /* ServiceDetailsViewModel.swift in Sources */,
+				B3C91D471F312B0D0091D708 /* RegisterViewModel.swift in Sources */,
 				B34791461F30D74500BF30F4 /* Dicounts.swift in Sources */,
 				B347913F1F30D1E600BF30F4 /* OrderTableViewCell.swift in Sources */,
 				B39DD13C1F2791C9009499F5 /* PlaceServicesTableViewController.swift in Sources */,
 				B39DD14E1F27DD65009499F5 /* ServiceDetailsViewController.swift in Sources */,
+				B3C91D491F3141F70091D708 /* FormTableViewCell.swift in Sources */,
 				B31E60551EA23AF800F2CB77 /* SplashFlowCoordinator.swift in Sources */,
 				B34791441F30D4C300BF30F4 /* Order.swift in Sources */,
 				B30667791F1A4DD500511AA5 /* PlaceDetailsViewModel.swift in Sources */,

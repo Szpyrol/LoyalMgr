@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imie Nazwisko" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ7-LK-lDR">
-                                                    <rect key="frame" x="8" y="8" width="359" height="71"/>
+                                                    <rect key="frame" x="34" y="8" width="341" height="71"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -36,8 +36,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gQ7-LK-lDR" firstAttribute="top" secondItem="3JZ-bl-5Y3" secondAttribute="top" constant="8" id="7nd-lY-Vx7"/>
-                                                <constraint firstAttribute="trailing" secondItem="gQ7-LK-lDR" secondAttribute="trailing" constant="8" id="Ame-9n-hkV"/>
-                                                <constraint firstItem="gQ7-LK-lDR" firstAttribute="leading" secondItem="3JZ-bl-5Y3" secondAttribute="leading" constant="8" id="v7q-fQ-4qR"/>
+                                                <constraint firstAttribute="trailing" secondItem="gQ7-LK-lDR" secondAttribute="trailing" id="Ame-9n-hkV"/>
+                                                <constraint firstItem="gQ7-LK-lDR" firstAttribute="leading" secondItem="3JZ-bl-5Y3" secondAttribute="leading" constant="34" id="v7q-fQ-4qR"/>
                                                 <constraint firstAttribute="bottom" secondItem="gQ7-LK-lDR" secondAttribute="bottom" constant="7.5" id="yiM-Qd-CHm"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -130,8 +130,30 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Pg8-Li-3A2">
+                                        <rect key="frame" x="0.0" y="327" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pg8-Li-3A2" id="lX3-MS-afK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wyloguj" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ck-VR-fo3">
+                                                    <rect key="frame" x="34" y="8" width="341" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1ck-VR-fo3" firstAttribute="leading" secondItem="lX3-MS-afK" secondAttribute="leading" constant="34" id="2TQ-5q-QYg"/>
+                                                <constraint firstAttribute="trailing" secondItem="1ck-VR-fo3" secondAttribute="trailing" id="4Qn-h9-UKT"/>
+                                                <constraint firstItem="1ck-VR-fo3" firstAttribute="top" secondItem="lX3-MS-afK" secondAttribute="top" constant="8" id="QRy-ew-wl3"/>
+                                                <constraint firstAttribute="bottom" secondItem="1ck-VR-fo3" secondAttribute="bottom" constant="7.5" id="Un1-Vz-jRl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="ZE1-vh-HUM">
-                                        <rect key="frame" x="0.0" y="327" width="375" height="155"/>
+                                        <rect key="frame" x="0.0" y="387" width="375" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZE1-vh-HUM" id="H5L-8z-Sli">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>

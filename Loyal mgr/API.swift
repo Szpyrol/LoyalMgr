@@ -11,7 +11,7 @@ import Alamofire
 
 
 class API {
-    let baseURL:String = "http://192.168.0.206:8080/"
+    let baseURL:String = "http://172.17.9.214:8080/" //10.81.100.76
     
     static let sharedInstance = API()
     

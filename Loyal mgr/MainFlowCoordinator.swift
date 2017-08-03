@@ -28,12 +28,37 @@ class MainFlowCoordinator: FlowCoordinator {
             showAuthFlow()
         }*/
         
-        
+        //showAuthFlow()
        
         
         self.preparationForFlow(starting:
             self.startPlaces(navController:))
     }
+    
+    func showAuthFlow(){
+        
+        
+        let navigationController = UINavigationController()
+        navigationController.isNavigationBarHidden = true;
+        
+        if let frame = configure.window?.bounds {
+            navigationController.view.frame = frame
+        }
+        
+        configure.window?.rootViewController = navigationController
+        configure.window?.makeKeyAndVisible()
+        
+        
+        
+        let authConfigure = FlowConfigure(window: nil, navigationController:navigationController, parent: self)
+        let authFlowCoordinator = AuthorizationFlowCoordinator(configure: authConfigure)
+        authFlowCoordinator.start()
+        
+        
+        
+        
+    }
+    
     
     func preparationForFlow( starting: ( _ nav: UINavigationController)-> Void){
         

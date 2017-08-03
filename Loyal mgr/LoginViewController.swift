@@ -8,11 +8,22 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UITableViewController {
 
+    
+    
+    @IBOutlet weak var emailCell: FormTableViewCell!
+    @IBOutlet weak var passwordCell: FormTableViewCell!
+    
+    
+    
+    
+    @IBAction func signIn(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Login"
         // Do any additional setup after loading the view.
     }
 

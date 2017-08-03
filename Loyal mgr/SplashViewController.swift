@@ -22,13 +22,13 @@ class SplashViewController: UIViewController {
         
         UIView.animate(withDuration: 0.5, delay: 0.0, options: [.curveEaseIn], animations: { () -> Void in
             // Fade in
-            self.view.backgroundColor = UIColor.green
+            self.view.backgroundColor = UIColor.white
             self.label.alpha = 1.0
             
         }) { (success) -> Void in
             // Fade out
             UIView.animate(withDuration: 0.5, delay: 0.5, options: [.curveEaseOut], animations: { () -> Void in
-                self.view.backgroundColor = UIColor.white
+                self.view.backgroundColor = UIColor.black
                 self.label.alpha = 0.0
                 
             }) { (success) -> Void in
