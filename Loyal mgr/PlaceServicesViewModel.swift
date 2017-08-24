@@ -14,18 +14,20 @@ protocol PlaceServicesViewModelDelegate{
 
 class PlaceServicesViewModel{
     
+    var place:Place?
     var services:[Service] = [Service]()
     var servicesViewModels:[ServiceCellViewModel]? = [ServiceCellViewModel]()
     var delegate: PlaceServicesViewModelDelegate?
     
-    init(viewController: PlaceServicesViewModelDelegate) {
+    init(viewController: PlaceServicesViewModelDelegate, place: Place) {
+        self.place = place
         self.delegate = viewController
         
     }
     
     func fetchItems(){
     
-        API.sharedInstance.getServices(completion: {(services, error) in
+        API.sharedInstance.getServices(placeId:  (place?.id)!,completion: {(services, error) in
             
             
             

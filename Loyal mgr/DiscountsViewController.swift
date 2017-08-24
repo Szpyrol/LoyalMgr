@@ -12,6 +12,7 @@ import SideMenu
 
 class DiscountsViewController: UITableViewController {
 
+    var viewModel:DiscountsViewModel?
     
     func menuButtonPressed(){
         
@@ -48,7 +49,7 @@ class DiscountsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1//viewModel.places.count
+        return (viewModel?.cellViewModels.count)!
     }
     
     
@@ -56,7 +57,8 @@ class DiscountsViewController: UITableViewController {
         
         let cell :DiscountTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DiscountTableViewCell", for: indexPath) as! DiscountTableViewCell
         
-        // cell.setCellModel(cellModel: (viewModel?.modelAtIndex(index: indexPath))!)
+        let discountViewModel = (viewModel?.cellViewModels[indexPath.row])!
+         cell.setCellModel(cellViewModel: discountViewModel)
         return cell
     }
     
@@ -66,11 +68,60 @@ class DiscountsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("did select row")
+//      viewModel.
         //viewModel.didChoosePlaceToShow(indexPath: indexPath)
+        
+        let alert = UIAlertController(title: "Question", message: "Are you sure you want to buy this?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "YES", style: UIAlertActionStyle.default, handler: {_ in
+            self.viewModel?.buy(index: indexPath.row)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "NO", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+
+        
+        
         
     }
     
 
 
+}
+
+extension DiscountsViewController: DiscountsViewModelDelegate{
+    
+    func didFetchItems() {
+        self.tableView.reloadData()
+        
+    }
+    func didBuyDicount() {
+        
+        
+        Auth.sharedInstance.updateUserData()
+        
+        let alert = UIAlertController(title: "Success", message: "You have a new discount now! You will see it when ordering a new service!", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+        
+
+        
+    }
+    func errorToShow(errorTxt: String) {
+        
+        
+        let alert = UIAlertController(title: "Error", message: errorTxt, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+        
+        
+
+        
+        
+        
+    }
+    
 }

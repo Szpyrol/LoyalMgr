@@ -37,11 +37,11 @@ class PlaceDetailsFlowCoordinator: FlowCoordinator {
       
     }
     
-    func startPlaceServices(){
+    func startPlaceServices(place: Place){
         
         let storyboard = UIStoryboard(name: "PlaceDetails", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"PlaceServicesTableViewController") as! PlaceServicesTableViewController
-        viewController.viewModel = PlaceServicesViewModel(viewController: viewController)
+        viewController.viewModel = PlaceServicesViewModel(viewController: viewController, place: place )
         viewController.viewModel?.fetchItems()
         viewController.delegate = self
         
@@ -81,8 +81,8 @@ class PlaceDetailsFlowCoordinator: FlowCoordinator {
     }
 }
 extension PlaceDetailsFlowCoordinator: PlaceDetailsViewControllerDelegate{
-    func didChooseToCheckServices() {
-        startPlaceServices()
+    func didChooseToCheckServices(place: Place) {
+        startPlaceServices(place: place)
     }
 }
 extension PlaceDetailsFlowCoordinator: PlaceServicesTableViewControllerDelegate{

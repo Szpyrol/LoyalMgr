@@ -28,6 +28,7 @@ class ServiceOrderViewController: UIViewController {
         self.discountPicker.delegate = self;
         self.discountPicker.dataSource = self;
         viewModel?.fetchItems()
+        viewModel?.datePickerAction(pickerDate: datePicker.date)
         // Do any additional setup after loading the view.
     }
 
@@ -40,8 +41,18 @@ class ServiceOrderViewController: UIViewController {
     }
     
     @IBAction func sendRequest(_ sender: Any) {
-        self.delegate?.didPressSendRequest()
-    }
+        
+        //jaki user (id)
+        //jaki servis (id)
+        //jaki timestamp
+        //jaki rabat(id)
+       
+        self.viewModel?.formOrder()
+        
+        
+        
+        
+            }
 }
 
 extension ServiceOrderViewController: ServiceOrderViewModelDelegate{
@@ -50,6 +61,22 @@ extension ServiceOrderViewController: ServiceOrderViewModelDelegate{
     }
     func didFetchItems() {
         self.discountPicker.reloadAllComponents()
+    }
+    func didMakeOrder() {
+        let alert = UIAlertController(title: "Success", message: "We did send and order to place", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: { txt in
+         self.delegate?.didPressSendRequest()
+            
+        })
+        
+       
+
+    }
+    func error(errorTxt: String) {
+        let alert = UIAlertController(title: "Error", message: errorTxt, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 extension ServiceOrderViewController: UIPickerViewDelegate, UIPickerViewDataSource{
@@ -64,6 +91,10 @@ extension ServiceOrderViewController: UIPickerViewDelegate, UIPickerViewDataSour
     // The data to return for the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return viewModel?.pickerData[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        self.viewModel?.pickerDidSelectRow(row: row)
     }
     
 }

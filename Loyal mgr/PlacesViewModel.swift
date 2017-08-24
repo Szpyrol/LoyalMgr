@@ -23,12 +23,10 @@ class PlacesViewModel {
     func fetchItems(){
        
         API.sharedInstance.getPlaces(completion: {(places, error) in
-            
-          
-       
+
             
             let listOfPlaces :NSArray = places! as NSArray
-            print(listOfPlaces)
+            
             for dic in listOfPlaces
             {
                 
@@ -41,17 +39,35 @@ class PlacesViewModel {
             
             
         })
-           /* let listOfPlaces :NSArray = loadJson(filename: "placesList")!
-            print(listOfPlaces)
-            for dic in listOfPlaces
-            {
-                
-                let newPlace =  Place(dic: dic as! NSDictionary)
-                places.append(newPlace)
-            }
         
-            self.delegate?.didFetchItems()
- */
+        
+        
+     /*   API.sharedInstance.getUserData(completion: {(info, error) in
+            
+            
+            print("lol works")
+            
+        })
+       */
+        
+        /*let user = User(password:"passwordjakis" ,firstName: "fist", lastName: "last", email: "em", phone: "ph")
+        API.sharedInstance.postUserData(user: user, completion: {(info, error) in
+            
+            
+            print("lol post works")
+            
+        })
+        */
+
+        API.sharedInstance.getUserData(email: "szpyrol", password: "zwyrol", completion: {(info, error) in
+            
+            
+            print("lol works")
+            
+        })
+        
+        
+        
         
     }
     

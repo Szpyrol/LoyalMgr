@@ -22,17 +22,15 @@ class MainFlowCoordinator: FlowCoordinator {
     }
     
     func start() {
-       /* if Auth.sharedInstance.isLoggedIn() {
-            showMainFlow()
+        //Auth.sharedInstance.logoutUser()
+        
+        if Auth.sharedInstance.isLoggedIn() {
+              self.preparationForFlow(starting:self.startPlaces(navController:))
+            
         } else {
             showAuthFlow()
-        }*/
+        }
         
-        //showAuthFlow()
-       
-        
-        self.preparationForFlow(starting:
-            self.startPlaces(navController:))
     }
     
     func showAuthFlow(){
@@ -52,6 +50,7 @@ class MainFlowCoordinator: FlowCoordinator {
         
         let authConfigure = FlowConfigure(window: nil, navigationController:navigationController, parent: self)
         let authFlowCoordinator = AuthorizationFlowCoordinator(configure: authConfigure)
+        authFlowCoordinator.delegate = self
         authFlowCoordinator.start()
         
         
@@ -112,10 +111,7 @@ class MainFlowCoordinator: FlowCoordinator {
     }
     
     func startDiscounts(navController: UINavigationController){
-        
-      
-        
-        
+
         
         let discountsConf = FlowConfigure(window: nil, navigationController: navController, parent: self)
         let discountsCoordinator = DiscountsFlowCoordinator(configure: discountsConf)
@@ -163,6 +159,15 @@ extension MainFlowCoordinator: MenuViewControllerDelegate{
         }
         
         })
+        
+    }
+}
+
+extension MainFlowCoordinator: AuthorizationFlowCoordinatorDelegate{
+    func didFinishWithUserData(){
+        
+        self.preparationForFlow(starting:
+            self.startPlaces(navController:))
         
     }
 }

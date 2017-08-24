@@ -40,12 +40,21 @@
 		B31E607D1EA5159400F2CB77 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B31E607B1EA5159400F2CB77 /* PlaceTableViewCell.xib */; };
 		B31E60811EA5220900F2CB77 /* PlaceCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31E60801EA5220900F2CB77 /* PlaceCellModel.swift */; };
 		B31E60831EA524EA00F2CB77 /* placeImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B31E60821EA524EA00F2CB77 /* placeImg.jpg */; };
+		B3205A881F40FD0300A2D115 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3205A861F40FD0300A2D115 /* Establishment.swift */; };
+		B3205A891F40FD0300A2D115 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3205A871F40FD0300A2D115 /* AnnotationView.swift */; };
+		B3205A8C1F40FF3500A2D115 /* MapCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3205A8B1F40FF3500A2D115 /* MapCalloutView.swift */; };
+		B3205A8E1F40FF5400A2D115 /* MapCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3205A8D1F40FF5400A2D115 /* MapCalloutView.xib */; };
+		B3205A901F41091000A2D115 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3205A8F1F41091000A2D115 /* MapKit.framework */; };
 		B32329D81F2867F000409A2E /* ServiceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32329D71F2867F000409A2E /* ServiceOrderViewController.swift */; };
 		B32329DA1F2867FD00409A2E /* ServiceOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32329D91F2867FD00409A2E /* ServiceOrderViewModel.swift */; };
 		B32329DC1F286F5D00409A2E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32329DB1F286F5D00409A2E /* Day.swift */; };
 		B32329DE1F289A7C00409A2E /* userDiscounts.json in Resources */ = {isa = PBXBuildFile; fileRef = B32329DD1F289A7C00409A2E /* userDiscounts.json */; };
 		B32329E01F28B32200409A2E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B32329DF1F28B32200409A2E /* Podfile */; };
 		B32329E51F28BA5700409A2E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32329E41F28BA5700409A2E /* MenuViewController.swift */; };
+		B323CD581F3DEA2300D03EA6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323CD571F3DEA2300D03EA6 /* User.swift */; };
+		B323CD5B1F3E0ECD00D03EA6 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323CD5A1F3E0ECD00D03EA6 /* Auth.swift */; };
+		B323CD691F40C5A200D03EA6 /* OrderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323CD681F40C5A200D03EA6 /* OrderCellViewModel.swift */; };
+		B324DE891F42EEB900F9498D /* DiscountCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B324DE881F42EEB900F9498D /* DiscountCellViewModel.swift */; };
 		B33613371F17D4FD00CFA22F /* placesList.json in Resources */ = {isa = PBXBuildFile; fileRef = B33613361F17D4FD00CFA22F /* placesList.json */; };
 		B34791281F30A2AE00BF30F4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791271F30A2AE00BF30F4 /* SettingsViewController.swift */; };
 		B347912A1F30A2BE00BF30F4 /* DiscountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791291F30A2BE00BF30F4 /* DiscountsViewController.swift */; };
@@ -60,7 +69,7 @@
 		B34791401F30D1E600BF30F4 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B347913E1F30D1E600BF30F4 /* OrderTableViewCell.xib */; };
 		B34791421F30D33C00BF30F4 /* OrdersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791411F30D33C00BF30F4 /* OrdersListViewModel.swift */; };
 		B34791441F30D4C300BF30F4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791431F30D4C300BF30F4 /* Order.swift */; };
-		B34791461F30D74500BF30F4 /* Dicounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791451F30D74500BF30F4 /* Dicounts.swift */; };
+		B34791461F30D74500BF30F4 /* Discount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791451F30D74500BF30F4 /* Discount.swift */; };
 		B34791481F30D7A400BF30F4 /* DiscountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791471F30D7A400BF30F4 /* DiscountsViewModel.swift */; };
 		B347914A1F30D7BD00BF30F4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34791491F30D7BD00BF30F4 /* SettingsViewModel.swift */; };
 		B347914E1F30D83A00BF30F4 /* DiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B347914C1F30D83A00BF30F4 /* DiscountTableViewCell.swift */; };
@@ -146,12 +155,21 @@
 		B31E607B1EA5159400F2CB77 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 		B31E60801EA5220900F2CB77 /* PlaceCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCellModel.swift; sourceTree = "<group>"; };
 		B31E60821EA524EA00F2CB77 /* placeImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeImg.jpg; sourceTree = "<group>"; };
+		B3205A861F40FD0300A2D115 /* Establishment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
+		B3205A871F40FD0300A2D115 /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		B3205A8B1F40FF3500A2D115 /* MapCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCalloutView.swift; sourceTree = "<group>"; };
+		B3205A8D1F40FF5400A2D115 /* MapCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapCalloutView.xib; sourceTree = "<group>"; };
+		B3205A8F1F41091000A2D115 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B32329D71F2867F000409A2E /* ServiceOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceOrderViewController.swift; sourceTree = "<group>"; };
 		B32329D91F2867FD00409A2E /* ServiceOrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceOrderViewModel.swift; sourceTree = "<group>"; };
 		B32329DB1F286F5D00409A2E /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		B32329DD1F289A7C00409A2E /* userDiscounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userDiscounts.json; sourceTree = "<group>"; };
 		B32329DF1F28B32200409A2E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B32329E41F28BA5700409A2E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B323CD571F3DEA2300D03EA6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B323CD5A1F3E0ECD00D03EA6 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		B323CD681F40C5A200D03EA6 /* OrderCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCellViewModel.swift; sourceTree = "<group>"; };
+		B324DE881F42EEB900F9498D /* DiscountCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountCellViewModel.swift; sourceTree = "<group>"; };
 		B33613361F17D4FD00CFA22F /* placesList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = placesList.json; sourceTree = "<group>"; };
 		B34791271F30A2AE00BF30F4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B34791291F30A2BE00BF30F4 /* DiscountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountsViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +184,7 @@
 		B347913E1F30D1E600BF30F4 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		B34791411F30D33C00BF30F4 /* OrdersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersListViewModel.swift; sourceTree = "<group>"; };
 		B34791431F30D4C300BF30F4 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		B34791451F30D74500BF30F4 /* Dicounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dicounts.swift; sourceTree = "<group>"; };
+		B34791451F30D74500BF30F4 /* Discount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discount.swift; sourceTree = "<group>"; };
 		B34791471F30D7A400BF30F4 /* DiscountsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountsViewModel.swift; sourceTree = "<group>"; };
 		B34791491F30D7BD00BF30F4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		B347914C1F30D83A00BF30F4 /* DiscountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscountTableViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39DD1321F275372009499F5 /* CoreLocation.framework in Frameworks */,
+				B3205A901F41091000A2D115 /* MapKit.framework in Frameworks */,
 				65A0DC0FBF5DCCDFADAC9F05 /* Pods_Loyal_mgr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +242,7 @@
 		98BCFEF07123DA244C075419 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3205A8F1F41091000A2D115 /* MapKit.framework */,
 				B39DD1311F275372009499F5 /* CoreLocation.framework */,
 				652DDF5490BBB929930CE742 /* Pods_Loyal_mgr.framework */,
 			);
@@ -244,8 +264,8 @@
 		B30667731F1A4D8B00511AA5 /* PlaceDetails */ = {
 			isa = PBXGroup;
 			children = (
-				B30667771F1A4DBE00511AA5 /* VM */,
 				B30667761F1A4DB200511AA5 /* VC */,
+				B30667771F1A4DBE00511AA5 /* VM */,
 			);
 			name = PlaceDetails;
 			sourceTree = "<group>";
@@ -388,8 +408,8 @@
 		B31E60601EA2563D00F2CB77 /* Places List */ = {
 			isa = PBXGroup;
 			children = (
-				B31E606C1EA27BD300F2CB77 /* VM */,
 				B31E60691EA2772200F2CB77 /* VC */,
+				B31E606C1EA27BD300F2CB77 /* VM */,
 				B31E60651EA276D500F2CB77 /* PlacesFlowCoordinator.swift */,
 			);
 			name = "Places List";
@@ -402,7 +422,8 @@
 				B39DD1461F279EEE009499F5 /* Service.swift */,
 				B32329DB1F286F5D00409A2E /* Day.swift */,
 				B34791431F30D4C300BF30F4 /* Order.swift */,
-				B34791451F30D74500BF30F4 /* Dicounts.swift */,
+				B34791451F30D74500BF30F4 /* Discount.swift */,
+				B323CD571F3DEA2300D03EA6 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -436,6 +457,9 @@
 		B31E606C1EA27BD300F2CB77 /* VM */ = {
 			isa = PBXGroup;
 			children = (
+				B3205A8A1F40FEFE00A2D115 /* CalloutView */,
+				B3205A861F40FD0300A2D115 /* Establishment.swift */,
+				B3205A871F40FD0300A2D115 /* AnnotationView.swift */,
 				B31E606D1EA27C0000F2CB77 /* PlacesViewModel.swift */,
 				B31E60711EA2AA2900F2CB77 /* PlacesListViewModel.swift */,
 				B31E60751EA388D600F2CB77 /* PlacesMapViewModel.swift */,
@@ -451,6 +475,15 @@
 				B31E607B1EA5159400F2CB77 /* PlaceTableViewCell.xib */,
 			);
 			name = "List Cell";
+			sourceTree = "<group>";
+		};
+		B3205A8A1F40FEFE00A2D115 /* CalloutView */ = {
+			isa = PBXGroup;
+			children = (
+				B3205A8B1F40FF3500A2D115 /* MapCalloutView.swift */,
+				B3205A8D1F40FF5400A2D115 /* MapCalloutView.xib */,
+			);
+			name = CalloutView;
 			sourceTree = "<group>";
 		};
 		B32329D41F28675800409A2E /* ServiceOrder */ = {
@@ -505,6 +538,7 @@
 		B32329E61F28D5A200409A2E /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				B347913C1F30D1AC00BF30F4 /* OrderCell */,
 				B34791261F30A28C00BF30F4 /* VC */,
 				B34791251F30A28800BF30F4 /* VM */,
 				B34791371F30A81800BF30F4 /* OrdersFlowCoordinator.swift */,
@@ -530,6 +564,14 @@
 				B34791331F30A5C100BF30F4 /* SettingsFlowCoordinator.swift */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		B323CD591F3E0EC500D03EA6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B323CD5A1F3E0ECD00D03EA6 /* Auth.swift */,
+			);
+			name = Auth;
 			sourceTree = "<group>";
 		};
 		B33613351F17D47A00CFA22F /* Supporting files */ = {
@@ -586,7 +628,6 @@
 		B34791261F30A28C00BF30F4 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				B347913C1F30D1AC00BF30F4 /* OrderCell */,
 				B347912B1F30A2CB00BF30F4 /* OrdersViewController.swift */,
 			);
 			name = VC;
@@ -596,6 +637,7 @@
 			isa = PBXGroup;
 			children = (
 				B347913D1F30D1E600BF30F4 /* OrderTableViewCell.swift */,
+				B323CD681F40C5A200D03EA6 /* OrderCellViewModel.swift */,
 				B347913E1F30D1E600BF30F4 /* OrderTableViewCell.xib */,
 			);
 			name = OrderCell;
@@ -606,6 +648,7 @@
 			children = (
 				B347914C1F30D83A00BF30F4 /* DiscountTableViewCell.swift */,
 				B347914D1F30D83A00BF30F4 /* DiscountTableViewCell.xib */,
+				B324DE881F42EEB900F9498D /* DiscountCellViewModel.swift */,
 			);
 			name = DiscountCell;
 			sourceTree = "<group>";
@@ -644,6 +687,7 @@
 		B39DD1331F277368009499F5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B323CD591F3E0EC500D03EA6 /* Auth */,
 				B39DD1351F277377009499F5 /* GPS */,
 				B39DD1341F277371009499F5 /* API */,
 			);
@@ -669,8 +713,8 @@
 		B39DD1381F27914B009499F5 /* PlaceServices */ = {
 			isa = PBXGroup;
 			children = (
-				B39DD1391F279155009499F5 /* VM */,
 				B39DD13A1F27915B009499F5 /* VC */,
+				B39DD1391F279155009499F5 /* VM */,
 			);
 			name = PlaceServices;
 			sourceTree = "<group>";
@@ -809,6 +853,11 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 3477FZ96PQ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					B31E60301EA2390900F2CB77 = {
 						CreatedOnToolsVersion = 8.3;
@@ -849,6 +898,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3205A8E1F40FF5400A2D115 /* MapCalloutView.xib in Resources */,
 				B31E60831EA524EA00F2CB77 /* placeImg.jpg in Resources */,
 				B31E602B1EA2390900F2CB77 /* LaunchScreen.storyboard in Resources */,
 				B34791401F30D1E600BF30F4 /* OrderTableViewCell.xib in Resources */,
@@ -945,6 +995,7 @@
 				B34791381F30A81800BF30F4 /* OrdersFlowCoordinator.swift in Sources */,
 				B31E60761EA388D600F2CB77 /* PlacesMapViewModel.swift in Sources */,
 				B32329DC1F286F5D00409A2E /* Day.swift in Sources */,
+				B323CD5B1F3E0ECD00D03EA6 /* Auth.swift in Sources */,
 				B39DD1401F279A21009499F5 /* ServiceTableViewCell.swift in Sources */,
 				B32329E51F28BA5700409A2E /* MenuViewController.swift in Sources */,
 				B3C91D451F312AFD0091D708 /* LoginViewModel.swift in Sources */,
@@ -952,6 +1003,7 @@
 				B32329D81F2867F000409A2E /* ServiceOrderViewController.swift in Sources */,
 				B31E60261EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld in Sources */,
 				B39DD1471F279EEE009499F5 /* Service.swift in Sources */,
+				B324DE891F42EEB900F9498D /* DiscountCellViewModel.swift in Sources */,
 				B31E60721EA2AA2900F2CB77 /* PlacesListViewModel.swift in Sources */,
 				B31E60681EA2771C00F2CB77 /* PlacesViewController.swift in Sources */,
 				B30667701F1A4ACE00511AA5 /* PlaceDetailsFlowCoordinator.swift in Sources */,
@@ -960,6 +1012,7 @@
 				B31E60661EA276D500F2CB77 /* PlacesFlowCoordinator.swift in Sources */,
 				B31E60701EA2AA1700F2CB77 /* PlacesListTableViewController.swift in Sources */,
 				B32329DA1F2867FD00409A2E /* ServiceOrderViewModel.swift in Sources */,
+				B323CD581F3DEA2300D03EA6 /* User.swift in Sources */,
 				B306677B1F1A4DE400511AA5 /* PlaceDetailsViewController.swift in Sources */,
 				B31E60741EA388BE00F2CB77 /* PlacesMapViewController.swift in Sources */,
 				B31E60641EA2570000F2CB77 /* Place.swift in Sources */,
@@ -973,10 +1026,14 @@
 				B34791361F30A7E400BF30F4 /* DiscountsFlowCoordinator.swift in Sources */,
 				B3C91D411F312A4C0091D708 /* RegisterViewController.swift in Sources */,
 				B34791421F30D33C00BF30F4 /* OrdersListViewModel.swift in Sources */,
+				B3205A8C1F40FF3500A2D115 /* MapCalloutView.swift in Sources */,
+				B323CD691F40C5A200D03EA6 /* OrderCellViewModel.swift in Sources */,
 				B34791281F30A2AE00BF30F4 /* SettingsViewController.swift in Sources */,
+				B3205A891F40FD0300A2D115 /* AnnotationView.swift in Sources */,
 				B34791481F30D7A400BF30F4 /* DiscountsViewModel.swift in Sources */,
 				B31E60811EA5220900F2CB77 /* PlaceCellModel.swift in Sources */,
 				B31E605A1EA2443D00F2CB77 /* MainFlowCoordinator.swift in Sources */,
+				B3205A881F40FD0300A2D115 /* Establishment.swift in Sources */,
 				B39DD1371F2773C0009499F5 /* UserLocManager.swift in Sources */,
 				B347912A1F30A2BE00BF30F4 /* DiscountsViewController.swift in Sources */,
 				B34791561F30E2F400BF30F4 /* AuthorizationViewController.swift in Sources */,
@@ -984,7 +1041,7 @@
 				B3C91D431F312AB80091D708 /* AuthorizationViewModel.swift in Sources */,
 				B39DD1501F27DF8A009499F5 /* ServiceDetailsViewModel.swift in Sources */,
 				B3C91D471F312B0D0091D708 /* RegisterViewModel.swift in Sources */,
-				B34791461F30D74500BF30F4 /* Dicounts.swift in Sources */,
+				B34791461F30D74500BF30F4 /* Discount.swift in Sources */,
 				B347913F1F30D1E600BF30F4 /* OrderTableViewCell.swift in Sources */,
 				B39DD13C1F2791C9009499F5 /* PlaceServicesTableViewController.swift in Sources */,
 				B39DD14E1F27DD65009499F5 /* ServiceDetailsViewController.swift in Sources */,

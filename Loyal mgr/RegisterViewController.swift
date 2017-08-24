@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+protocol RegisterViewControllerDelegate : class {
+    func didFinishRegister()
+}
 class RegisterViewController: UITableViewController {
     
     @IBOutlet weak var firstCell: FormTableViewCell!
@@ -17,12 +19,15 @@ class RegisterViewController: UITableViewController {
     @IBOutlet weak var phoneCell: FormTableViewCell!
     @IBOutlet weak var emailCell: FormTableViewCell!
     
-    
+    var viewModel: RegisterViewModel?
+    weak var delegate: RegisterViewControllerDelegate?
     
     
     
     
     @IBAction func signUpAction(_ sender: Any) {
+        viewModel?.signUpWith(firstCell: self.firstCell, surnameCell: self.surnameCell, passwordCell: self.passwordCell, passwordRepeatCell: self.passwordRepeatCell, phoneCell: self.phoneCell, emailCell: self.emailCell)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,4 +52,18 @@ class RegisterViewController: UITableViewController {
     }
     */
 
+}
+extension RegisterViewController: RegisterViewModelDelegate{
+    
+    func didSignUp() {
+        self.delegate?.didFinishRegister()
+    }
+    func didNotSignUPWithError(errorTxt: String) {
+        let alert = UIAlertController(title: "Erorr", message: errorTxt, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+
+        
+    }
+    
 }

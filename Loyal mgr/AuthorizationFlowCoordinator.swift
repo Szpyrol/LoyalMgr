@@ -8,10 +8,14 @@
 
 import  UIKit
 
-
+protocol AuthorizationFlowCoordinatorDelegate: class{
+    func didFinishWithUserData()
+}
 class AuthorizationFlowCoordinator: FlowCoordinator {
     let configure : FlowConfigure!
     var childFlow : FlowCoordinator?
+    weak var delegate: AuthorizationFlowCoordinatorDelegate?
+    
     
     required init(configure : FlowConfigure) {
         self.configure = configure
@@ -23,6 +27,7 @@ class AuthorizationFlowCoordinator: FlowCoordinator {
         let storyboard = UIStoryboard(name: "Authorization", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"AuthorizationViewController") as! AuthorizationViewController
         viewController.delegate = self
+        
 
         configure.navigationController?.pushViewController(viewController, animated: false)
 
@@ -33,7 +38,8 @@ class AuthorizationFlowCoordinator: FlowCoordinator {
         configure.navigationController?.isNavigationBarHidden = false
         let storyboard = UIStoryboard(name: "Authorization", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"LoginViewController") as! LoginViewController
-        
+        viewController.delegate = self
+        viewController.viewModel = LoginViewModel(controller: viewController)
         configure.navigationController?.pushViewController(viewController, animated: false)
         
 
@@ -45,7 +51,8 @@ class AuthorizationFlowCoordinator: FlowCoordinator {
         configure.navigationController?.isNavigationBarHidden = false
         let storyboard = UIStoryboard(name: "Authorization", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"RegisterViewController") as! RegisterViewController
-        
+        viewController.delegate = self
+        viewController.viewModel = RegisterViewModel(viewController: viewController)
         configure.navigationController?.pushViewController(viewController, animated: false)
         
 
@@ -67,3 +74,19 @@ extension AuthorizationFlowCoordinator: AuthorizationViewControllerDelegate{
     }
     
 }
+extension AuthorizationFlowCoordinator: LoginViewControllerDelegate{
+    
+    func didFinishSigning() {
+     self.delegate?.didFinishWithUserData()
+        
+    }
+    
+}
+extension AuthorizationFlowCoordinator: RegisterViewControllerDelegate{
+    
+    func didFinishRegister() {
+        self.delegate?.didFinishWithUserData()
+    }
+    
+}
+

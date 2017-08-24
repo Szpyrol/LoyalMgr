@@ -10,15 +10,33 @@ import UIKit
 
 class OrderTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var placeName: UILabel!
+    @IBOutlet weak var adressLabel: UILabel!
+    
+    var cellModel: OrderCellViewModel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setCellModel(cellModel: OrderCellViewModel){
+        self.cellModel = cellModel
+        refreshCellData()
     }
+
+    func refreshCellData(){
+        
+        self.photo.sd_setImage(with: self.cellModel?.getImageUrl())
+        self.titleLabel.text = self.cellModel?.getServiceTitle()
+        self.statusLabel.text = self.cellModel?.setOrderStatus()
+        self.placeName.text = self.cellModel?.getPlaceName()
+        self.adressLabel.text = self.cellModel?.getAdress()
+        
+    }
+    
     
 }

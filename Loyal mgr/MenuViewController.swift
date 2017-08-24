@@ -13,11 +13,18 @@ protocol MenuViewControllerDelegate{
 }
 class MenuViewController: UITableViewController {
 
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var userPointsLabel: UILabel!
     var delegate: MenuViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        updateNameAndPoints()
+        
+        // Register to receive notification
+        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.updateNameAndPoints), name: Auth.sharedInstance.notificationName, object: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +33,18 @@ class MenuViewController: UITableViewController {
     }
     
 
+    override func viewDidAppear(_ animated: Bool) {
+        Auth.sharedInstance.updateUserData()
+        updateNameAndPoints()
+    }
+    
+    func updateNameAndPoints(){
+        self.userNameLabel.text = (Auth.sharedInstance.user?.firstName)! + (Auth.sharedInstance.user?.lastName)!
+        
+        self.userPointsLabel.text = "Points: " + String(describing: (Auth.sharedInstance.user?.points!)!)
+        
+        
+    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("indexPath:", indexPath.row)
         delegate?.didChooseFromMenu(index: indexPath.row)

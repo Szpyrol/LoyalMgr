@@ -171,6 +171,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="orderBtn" destination="wdx-Z0-T75" id="mao-AE-mS3"/>
                         <outlet property="serviceDescription" destination="b4o-Da-CyB" id="s2I-uA-bWd"/>
                         <outlet property="serviceImg" destination="Vwm-5M-KDa" id="xee-p2-cQM"/>
                     </connections>

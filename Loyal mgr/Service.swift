@@ -5,7 +5,8 @@
 //  Created by Łukasz Szpyrka on 25/07/2017.
 //  Copyright © 2017 Łukasz Szpyrka. All rights reserved.
 //
-
+//http://www.optykexpert.pl/images/oe1.jpg
+//https://salony-jeanlouisdavid.pl/wp-content/uploads/2016/12/fryzjer-warszawa_salon-jld-prosta-68_08.jpg
 import Foundation
 
 class Service: NSObject{
@@ -26,15 +27,15 @@ class Service: NSObject{
         
         for (key, value) in dic {
             let keyName = key as! String
-            if (keyName == "id" || keyName == "placeId")
+            if (keyName == "id")
             {
                 let keyValue: Int = value as! Int
-                if (responds(to: Selector(keyName))) {
-                    self.setValue(keyValue, forKey: keyName)
-                }
+               self.id = keyValue
                 
-            }
-            else{
+            }else if (keyName == "placeId"){
+                let keyValue: Int = value as! Int
+                self.placeId = keyValue
+            }else{
                 
                 let keyValue: String = value as! String
             

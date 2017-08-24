@@ -17,6 +17,7 @@ class ServiceDetailsViewController: UIViewController {
     
     @IBOutlet weak var serviceImg: UIImageView!
     @IBOutlet weak var serviceDescription: UILabel!
+    @IBOutlet weak var orderBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,9 @@ class ServiceDetailsViewController: UIViewController {
         self.title = viewModel?.titleText
         self.serviceDescription.text = viewModel?.serviceDescription
         self.serviceImg.sd_setImage(with: viewModel?.imageUrl)
-        
+        if(delegate == nil ){
+            self.orderBtn.isHidden = true
+        }
         // Do any additional setup after loading the view.
     }
 

@@ -21,7 +21,7 @@
                         <sections>
                             <tableViewSection id="cxK-Qe-9Tv">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="6qt-k7-5bh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="6qt-k7-5bh" customClass="FormTableViewCell" customModule="Loyal_mgr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6qt-k7-5bh" id="cE6-zI-jzV">
@@ -55,8 +55,12 @@
                                                 <constraint firstItem="DNl-gV-dmQ" firstAttribute="leading" secondItem="cE6-zI-jzV" secondAttribute="leadingMargin" id="oTm-I7-HQW"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="DNl-gV-dmQ" id="1Ku-Cb-eUV"/>
+                                            <outlet property="titleLabel" destination="yau-IM-aVw" id="on0-UM-Agb"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="fpS-Lk-RuI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="fpS-Lk-RuI" customClass="FormTableViewCell" customModule="Loyal_mgr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="77" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpS-Lk-RuI" id="m4P-mc-mQt">
@@ -90,8 +94,12 @@
                                                 <constraint firstItem="GY7-XP-07l" firstAttribute="top" secondItem="W8J-LQ-ibf" secondAttribute="bottom" constant="8" id="ymq-3e-Vpe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="GY7-XP-07l" id="nOg-am-Q2c"/>
+                                            <outlet property="titleLabel" destination="W8J-LQ-ibf" id="cdS-gt-PnA"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="QZe-9S-OVr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="QZe-9S-OVr" customClass="FormTableViewCell" customModule="Loyal_mgr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="154" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QZe-9S-OVr" id="Xf7-5Q-rNa">
@@ -125,8 +133,12 @@
                                                 <constraint firstItem="Npf-5s-2T6" firstAttribute="leading" secondItem="Xf7-5Q-rNa" secondAttribute="leadingMargin" id="pzY-vf-A55"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="Npf-5s-2T6" id="kvV-kB-COB"/>
+                                            <outlet property="titleLabel" destination="XuD-CR-QxY" id="T3Q-a9-z1Y"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="4mm-Yh-Yfk">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="4mm-Yh-Yfk" customClass="FormTableViewCell" customModule="Loyal_mgr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="231" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4mm-Yh-Yfk" id="toS-FM-Rtw">
@@ -160,8 +172,12 @@
                                                 <constraint firstItem="Ew3-jQ-VLB" firstAttribute="top" secondItem="T2v-Tb-ixw" secondAttribute="bottom" constant="8" id="pmH-9R-a61"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="Ew3-jQ-VLB" id="WjQ-Mq-W6i"/>
+                                            <outlet property="titleLabel" destination="T2v-Tb-ixw" id="mGs-fb-Tz7"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="o3V-b8-LEc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="o3V-b8-LEc" customClass="FormTableViewCell" customModule="Loyal_mgr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="308" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3V-b8-LEc" id="B0d-Bz-0At">
@@ -195,8 +211,12 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="e4e-NC-70A" secondAttribute="bottom" constant="9.5" id="g7J-xS-cJv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="e4e-NC-70A" id="ljo-nX-hEJ"/>
+                                            <outlet property="titleLabel" destination="hh4-Qx-znk" id="BU8-db-k0O"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="24J-2d-sA2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="24J-2d-sA2" customClass="FormTableViewCell" customModule="Loyal_mgr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="385" width="375" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="24J-2d-sA2" id="7FI-pj-8oO">
@@ -214,6 +234,9 @@
                                                             <integer key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="sendChangeDataRequest:" destination="8Dp-O8-BXo" eventType="touchUpInside" id="Uhj-vF-gTm"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -232,6 +255,13 @@
                             <outlet property="delegate" destination="8Dp-O8-BXo" id="o5Y-JX-dLQ"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="firstNameCell" destination="6qt-k7-5bh" id="zIR-cL-pYD"/>
+                        <outlet property="lastNameCell" destination="fpS-Lk-RuI" id="jT4-0V-igP"/>
+                        <outlet property="passwordCell" destination="QZe-9S-OVr" id="FjR-2J-rtX"/>
+                        <outlet property="phoneCell" destination="o3V-b8-LEc" id="0Wb-mi-NG0"/>
+                        <outlet property="repeatPasswordCell" destination="4mm-Yh-Yfk" id="UVO-Hn-q5n"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnG-JG-iFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

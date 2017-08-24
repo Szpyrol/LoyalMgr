@@ -7,3 +7,32 @@
 //
 
 import Foundation
+protocol SettingsViewModelDelegate: class{
+    func didSendData()
+}
+class SettingsViewModel: NSObject {
+    
+    weak var delegate: SettingsViewModelDelegate?
+    
+    
+    init(viewController: SettingsViewModelDelegate) {
+        self.delegate = viewController
+    }
+    
+    func getfirstName() -> String{
+        return (Auth.sharedInstance.user?.firstName)!
+    }
+    
+    func getlastName() -> String{
+        return (Auth.sharedInstance.user?.lastName)!
+    }
+    func getphone() -> String{
+        return (Auth.sharedInstance.user?.phone)!
+    }
+    
+    
+    
+    
+    
+    
+}

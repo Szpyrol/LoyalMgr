@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SDWebImage
 protocol PlaceDetailsViewControllerDelegate{
-        func didChooseToCheckServices()
+    func didChooseToCheckServices(place: Place)
 }
 class PlaceDetailsViewController: UIViewController{
     
@@ -34,7 +34,7 @@ class PlaceDetailsViewController: UIViewController{
         // Do any additional setup after loading the view.
     }
     @IBAction func checkServices(_ sender: Any) {
-        self.delegate?.didChooseToCheckServices()
+        self.delegate?.didChooseToCheckServices(place: viewModel.place!)
     }
     
 }

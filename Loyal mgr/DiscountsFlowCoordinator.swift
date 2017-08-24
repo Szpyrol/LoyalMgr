@@ -23,8 +23,8 @@ class DiscountsFlowCoordinator: FlowCoordinator {
         
         let storyboard = UIStoryboard(name: "Discounts", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"DiscountsViewController") as! DiscountsViewController
-        
-        
+        viewController.viewModel = DiscountsViewModel(viewController: viewController)
+        viewController.viewModel?.fetchItems()
         
         configure.navigationController?.pushViewController(viewController, animated: false)
         viewController.dismiss(animated: true, completion: nil)

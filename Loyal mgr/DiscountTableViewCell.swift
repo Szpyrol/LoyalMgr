@@ -10,6 +10,41 @@ import UIKit
 
 class DiscountTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var percentageLabel: UILabel!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    var cellViewModel: DiscountCellViewModel?
+    
+    
+    func setCellModel(cellViewModel: DiscountCellViewModel){
+        self.cellViewModel = cellViewModel
+        refreshCellData()
+    }
+    
+    func refreshCellData(){
+        
+        self.percentageLabel.text = cellViewModel?.getPercentage()
+        self.nameLabel.text = cellViewModel?.getName()
+        
+        
+        
+    }
+    
+
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

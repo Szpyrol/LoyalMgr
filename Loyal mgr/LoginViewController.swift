@@ -7,23 +7,28 @@
 //
 
 import UIKit
-
+protocol LoginViewControllerDelegate{
+    func didFinishSigning()
+}
 class LoginViewController: UITableViewController {
 
     
     
     @IBOutlet weak var emailCell: FormTableViewCell!
     @IBOutlet weak var passwordCell: FormTableViewCell!
-    
-    
+    var viewModel: LoginViewModel?
+    var delegate: LoginViewControllerDelegate?
     
     
     @IBAction func signIn(_ sender: Any) {
+        viewModel?.signIn(emailCell: emailCell, passwordCell: passwordCell)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Login"
+        
         // Do any additional setup after loading the view.
     }
 
@@ -43,4 +48,17 @@ class LoginViewController: UITableViewController {
     }
     */
 
+}
+extension LoginViewController: LoginViewModelDelegate{
+    
+    func didSignIn() {
+        
+        self.delegate?.didFinishSigning()
+    }
+    func didNotSignInWithError(errorTxt: String) {
+        let alert = UIAlertController(title: "Erorr", message: errorTxt, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }

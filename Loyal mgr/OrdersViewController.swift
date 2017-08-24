@@ -10,14 +10,14 @@ import UIKit
 import SideMenu
 
 protocol OrdersViewControllerDelegate: class{
-    func didChooseOrder()
+    func didChooseOrder(order: Order)
 }
 
 class OrdersViewController: UITableViewController {
 
+    var viewModel: OrdersListViewModel?
     
-    
-    
+    weak var delegate: OrdersViewControllerDelegate?
     
     
     func menuButtonPressed(){
@@ -57,7 +57,7 @@ class OrdersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1//viewModel.places.count
+        return (viewModel?.ordersArray.count)!
     }
     
     
@@ -65,21 +65,35 @@ class OrdersViewController: UITableViewController {
         
         let cell :OrderTableViewCell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell", for: indexPath) as! OrderTableViewCell
         
-       // cell.setCellModel(cellModel: (viewModel?.modelAtIndex(index: indexPath))!)
+        cell.setCellModel(cellModel: (viewModel?.modelAtIndex(index: indexPath.row))!)
+        
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80.0
+        return 120.0
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         print("did select row")
+        viewModel?.didChooseServiceToShow(index: indexPath.row)
         //viewModel.didChoosePlaceToShow(indexPath: indexPath)
         
     }
     
 
 
+}
+extension OrdersViewController: OrdersListViewModelDelegate{
+    
+    func didFetchItems(){
+        self.tableView.reloadData()
+        
+    }
+    func didChooseOrder(order: Order) {
+        self.delegate?.didChooseOrder(order: order)
+    }
+    
 }

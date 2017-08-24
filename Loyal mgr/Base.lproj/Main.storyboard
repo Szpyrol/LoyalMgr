@@ -184,6 +184,10 @@
                             <outlet property="delegate" destination="mwT-Vo-Xnc" id="Hyh-nM-qBO"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="userNameLabel" destination="gQ7-LK-lDR" id="qlr-1l-zgj"/>
+                        <outlet property="userPointsLabel" destination="BZg-kv-CV7" id="hdQ-e5-9uA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sy8-5j-xTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

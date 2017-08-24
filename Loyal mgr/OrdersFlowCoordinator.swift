@@ -23,12 +23,26 @@ class OrdersFlowCoordinator: FlowCoordinator {
         
         let storyboard = UIStoryboard(name: "Orders", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"OrdersViewController") as! OrdersViewController
-        
-        
-        
+        viewController.viewModel = OrdersListViewModel(viewController: viewController)
+        viewController.viewModel?.fetchItems()
+        viewController.delegate = self
         configure.navigationController?.pushViewController(viewController, animated: false)
-       // viewController.dismiss(animated: true, completion: nil)
         
-}
+    }
+    func startServiceController(service: Service){
+        
+        let storyboard = UIStoryboard(name: "PlaceDetails", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"ServiceDetailsViewController") as! ServiceDetailsViewController
+        
+        viewController.viewModel = ServiceDetailsViewModel(initService: service)
+        configure.navigationController?.pushViewController(viewController, animated: true)
+    }
 
 }
+
+extension OrdersFlowCoordinator : OrdersViewControllerDelegate{
+    func didChooseOrder(order: Order) {
+        startServiceController(service: order.service!)
+    }
+}
+

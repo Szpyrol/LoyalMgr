@@ -44,6 +44,10 @@
                     <constraint firstAttribute="bottom" secondItem="Bvo-hF-mou" secondAttribute="bottom" constant="7.5" id="tN9-M8-WrZ"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="JEp-hJ-Unk" id="Lh6-z8-CwE"/>
+                <outlet property="percentageLabel" destination="Bvo-hF-mou" id="NuM-cX-b7S"/>
+            </connections>
             <point key="canvasLocation" x="34" y="28"/>
         </tableViewCell>
     </objects>

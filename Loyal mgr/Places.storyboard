@@ -96,6 +96,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="45d-1r-OnY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="R6l-iT-OV9" id="LBF-0b-uCx"/>
+                                </connections>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-5f-W60">
                                 <rect key="frame" x="0.0" y="308" width="39" height="50"/>
@@ -132,6 +135,9 @@
                             <constraint firstItem="mzW-fH-kci" firstAttribute="top" secondItem="45d-1r-OnY" secondAttribute="bottom" id="hed-vV-VD1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="45d-1r-OnY" id="fVA-Qu-lgw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djj-F4-0Jw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

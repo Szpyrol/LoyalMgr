@@ -13,6 +13,7 @@ class SettingsFlowCoordinator: FlowCoordinator {
     let configure : FlowConfigure!
     var childFlow : FlowCoordinator?
     
+    
     required init(configure : FlowConfigure) {
         self.configure = configure
     }
@@ -22,6 +23,8 @@ class SettingsFlowCoordinator: FlowCoordinator {
         
         let storyboard = UIStoryboard(name: "Settings", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier :"SettingsViewController") as! SettingsViewController
+        viewController.viewModel = SettingsViewModel(viewController: viewController)
+        viewController.delegate = self
         
         
         
@@ -37,3 +40,9 @@ class SettingsFlowCoordinator: FlowCoordinator {
     
     
 }
+
+
+extension SettingsFlowCoordinator: SettingsViewControllerDelegate{
+    
+}
+
