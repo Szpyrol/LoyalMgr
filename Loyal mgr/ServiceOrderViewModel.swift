@@ -187,7 +187,8 @@ class ServiceOrderViewModel{
             status,error in
         
         
-            Auth.sharedInstance.updateUserData()
+            Auth.sharedInstance.updateUserData(completionUpdate:
+                {completed in })
             self.delegate?.didMakeOrder()
         
         } )

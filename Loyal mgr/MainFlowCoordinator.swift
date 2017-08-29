@@ -153,7 +153,10 @@ extension MainFlowCoordinator: MenuViewControllerDelegate{
             self.preparationForFlow(starting:
                 self.startSettings(navController:))
             break;
-            
+        case 5://wyloguj
+            Auth.sharedInstance.logoutUser()
+            self.showAuthFlow()
+            break;
         default:
             break;
         }

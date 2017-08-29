@@ -45,7 +45,9 @@ class Auth : NSObject{
         
     }
  
-    func updateUserData(){
+    func updateUserData(completionUpdate:@escaping (_ completedUpdate:Bool) -> Void){
+        
+        
         API.sharedInstance.refreshUserData(completion:
             {status, error in
                 
@@ -53,7 +55,7 @@ class Auth : NSObject{
                     self.saveUser()
                     // Post notification
                     NotificationCenter.default.post(name: self.notificationName, object: nil)
-                
+                    completionUpdate(true)
                     
                     
                 }

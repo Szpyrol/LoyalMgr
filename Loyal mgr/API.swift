@@ -11,7 +11,7 @@ import Alamofire
 
 import UIKit
 class API {
-    let baseURL:String = "http://192.168.2.5:8080/"//"http://10.20.0.52:8080/" //10.81.100.76
+    let baseURL:String = "http://192.168.0.206:8080/"//"http://10.20.0.52:8080/" //10.81.100.76
     
     static let sharedInstance = API()
     
@@ -77,7 +77,46 @@ extension API{
     }
 
     
+    func updateUserData(params: Dictionary<String, String>,completion:@escaping (_ userData:String?, _ error: String?) -> Void){
+        
+        
+        
+        let token = Auth.sharedInstance.token
+        let headers: HTTPHeaders = ["Authorization": "Bearer "+token!]
+        
+        let userId: String = String((Auth.sharedInstance.user!.id!))
+        let url :String = "\(baseURL)userRes/\(userId))"
+        
+        Alamofire.request(url, method: .patch, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (response:DataResponse<Any>) in
+            let statusCode = response.response?.statusCode
+            switch(response.result) {
+            case .success(_):
+                
+                print(String(describing: response.result.value))
+                if(statusCode == 200){
+                   // Auth.sharedInstance.initWithDictionary(dic: response.result.value as! NSDictionary)
+                    completion( "did it", nil)
+                }else{
+                    
+                    completion( nil, String(describing:statusCode))
+                }
+                // }
+                break
+                
+            case .failure(_):
+                completion( nil, String(describing:statusCode))
+                break
+                
+            }
+        }
+        
+        
+    }
     
+    
+    
+    
+
     func postUserData( user:User,completion:@escaping (_ status: String?, _ error: String?) -> Void){
         
         let parameters: Parameters = ["firstName": user.firstName,

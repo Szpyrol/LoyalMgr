@@ -28,7 +28,7 @@ class SettingsViewController: UITableViewController {
 
     @IBAction func sendChangeDataRequest(_ sender: Any) {
         
-        
+        viewModel?.validateForms(firstName: firstNameCell.textField.text, lastName: lastNameCell.textField.text, phone: phoneCell.textField.text, password1: passwordCell.textField.text, password2: repeatPasswordCell.textField.text)
         
     }
     
@@ -66,13 +66,28 @@ class SettingsViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-   
-    
 }
 extension SettingsViewController: SettingsViewModelDelegate{
-    func didSendData() {
+    func showMgs(txt: String) {
+        let alert = UIAlertController(title: "Walidacja", message: txt, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title:"OK", style: UIAlertActionStyle.default, handler: nil))
         
+        self.present(alert, animated: true, completion: nil)
     }
+
+    func didSendData(params: Dictionary<String,String>) {
+        API.sharedInstance.updateUserData(params: params, completion:  {(services, error) in
+            Auth.sharedInstance.updateUserData(completionUpdate:
+                {completed in
+            self.refreshUserData();
+                    let alert = UIAlertController(title: "Sukces", message: "Dane zostały zapisane na serwerze", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title:"OK", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    self.present(alert, animated: true, completion: nil)
+            })
+            
+        })
+    
+}
 }

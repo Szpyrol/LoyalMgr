@@ -99,7 +99,8 @@ extension DiscountsViewController: DiscountsViewModelDelegate{
     func didBuyDicount() {
         
         
-        Auth.sharedInstance.updateUserData()
+        Auth.sharedInstance.updateUserData(completionUpdate:
+            {completed in })
         
         let alert = UIAlertController(title: "Success", message: "You have a new discount now! You will see it when ordering a new service!", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Thanks!", style: UIAlertActionStyle.default, handler: nil))

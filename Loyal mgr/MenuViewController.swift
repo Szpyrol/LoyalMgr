@@ -34,8 +34,11 @@ class MenuViewController: UITableViewController {
     
 
     override func viewDidAppear(_ animated: Bool) {
-        Auth.sharedInstance.updateUserData()
-        updateNameAndPoints()
+        Auth.sharedInstance.updateUserData(completionUpdate:
+            {completed in
+         self.updateNameAndPoints()
+        })
+       
     }
     
     func updateNameAndPoints(){

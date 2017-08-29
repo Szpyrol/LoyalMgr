@@ -164,7 +164,7 @@
 		B32329D91F2867FD00409A2E /* ServiceOrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceOrderViewModel.swift; sourceTree = "<group>"; };
 		B32329DB1F286F5D00409A2E /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		B32329DD1F289A7C00409A2E /* userDiscounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userDiscounts.json; sourceTree = "<group>"; };
-		B32329DF1F28B32200409A2E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B32329DF1F28B32200409A2E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B32329E41F28BA5700409A2E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B323CD571F3DEA2300D03EA6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B323CD5A1F3E0ECD00D03EA6 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
@@ -289,7 +289,6 @@
 		B31E60111EA2390900F2CB77 = {
 			isa = PBXGroup;
 			children = (
-				B32329DF1F28B32200409A2E /* Podfile */,
 				B31E601C1EA2390900F2CB77 /* Loyal mgr */,
 				B31E60341EA2390900F2CB77 /* Loyal mgrTests */,
 				B31E603F1EA2390900F2CB77 /* Loyal mgrUITests */,
@@ -316,16 +315,8 @@
 				B31E60611EA2569C00F2CB77 /* Models */,
 				B31E60621EA256BD00F2CB77 /* Components */,
 				B31E604E1EA23A3E00F2CB77 /* FlowCoordinators */,
-				B31E601D1EA2390900F2CB77 /* AppDelegate.swift */,
-				B31E601F1EA2390900F2CB77 /* ViewController.swift */,
-				B31E60211EA2390900F2CB77 /* Main.storyboard */,
 				B31E605B1EA24AAA00F2CB77 /* UI */,
-				B31E60271EA2390900F2CB77 /* Assets.xcassets */,
-				B31E60821EA524EA00F2CB77 /* placeImg.jpg */,
 				B33613351F17D47A00CFA22F /* Supporting files */,
-				B31E60291EA2390900F2CB77 /* LaunchScreen.storyboard */,
-				B31E602C1EA2390900F2CB77 /* Info.plist */,
-				B31E60241EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld */,
 			);
 			path = "Loyal mgr";
 			sourceTree = "<group>";
@@ -577,6 +568,15 @@
 		B33613351F17D47A00CFA22F /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				B32329DF1F28B32200409A2E /* Podfile */,
+				B31E601D1EA2390900F2CB77 /* AppDelegate.swift */,
+				B31E60211EA2390900F2CB77 /* Main.storyboard */,
+				B31E601F1EA2390900F2CB77 /* ViewController.swift */,
+				B31E60821EA524EA00F2CB77 /* placeImg.jpg */,
+				B31E60271EA2390900F2CB77 /* Assets.xcassets */,
+				B31E60291EA2390900F2CB77 /* LaunchScreen.storyboard */,
+				B31E602C1EA2390900F2CB77 /* Info.plist */,
+				B31E60241EA2390900F2CB77 /* Loyal_mgr.xcdatamodeld */,
 				B33613361F17D4FD00CFA22F /* placesList.json */,
 				B39DD1481F27A345009499F5 /* servicesList.json */,
 				B32329DD1F289A7C00409A2E /* userDiscounts.json */,
